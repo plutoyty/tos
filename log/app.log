@@ -1,0 +1,228 @@
+2022-04-13 20:15:42.799  INFO 42160 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 42160 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 20:15:42.803  INFO 42160 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 20:15:44.852  INFO 42160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 20:15:44.855  INFO 42160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 20:15:44.890  INFO 42160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2022-04-13 20:15:45.369  INFO 42160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 20:15:45.377  INFO 42160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 20:15:45.377  INFO 42160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 20:15:45.378  INFO 42160 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 20:15:45.378  INFO 42160 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 20:15:45.378  INFO 42160 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 20:15:45.381  INFO 42160 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 20:15:45.550  INFO 42160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 20:15:45.550  INFO 42160 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2673 ms
+2022-04-13 20:15:52.410  INFO 42160 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 20:15:54.119  INFO 42160 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 20:15:54.121  INFO 42160 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 20:15:54.143  INFO 42160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 20:15:54.609  INFO 42160 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 12.425 seconds (JVM running for 14.412)
+2022-04-13 20:15:56.288  INFO 42160 --- [RMI TCP Connection(4)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 20:15:56.288  INFO 42160 --- [RMI TCP Connection(4)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 20:15:56.289  INFO 42160 --- [RMI TCP Connection(5)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 20:15:56.290  INFO 42160 --- [RMI TCP Connection(4)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-13 20:15:56.663  INFO 42160 --- [RMI TCP Connection(5)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 20:17:28.044  INFO 42160 --- [http-nio-80-exec-10] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:17:28.044  INFO 42160 --- [http-nio-80-exec-9] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:17:28.048  INFO 42160 --- [http-nio-80-exec-11] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:17:28.048  INFO 42160 --- [http-nio-80-exec-12] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:17:28.136  INFO 42160 --- [http-nio-80-exec-16] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:17:28.136  INFO 42160 --- [http-nio-80-exec-13] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:17:28.140  INFO 42160 --- [http-nio-80-exec-14] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:17:28.149  INFO 42160 --- [http-nio-80-exec-15] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:17:48.185  INFO 42160 --- [http-nio-80-exec-32] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:17:48.188  INFO 42160 --- [http-nio-80-exec-34] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:17:48.198  INFO 42160 --- [http-nio-80-exec-33] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:17:48.199  INFO 42160 --- [http-nio-80-exec-31] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:17:48.251  INFO 42160 --- [http-nio-80-exec-35] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:17:48.256  INFO 42160 --- [http-nio-80-exec-36] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:17:48.275  INFO 42160 --- [http-nio-80-exec-37] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:17:48.278  INFO 42160 --- [http-nio-80-exec-38] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:19:03.529  INFO 50396 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 50396 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 20:19:03.531  INFO 50396 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 20:19:04.828  INFO 50396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 20:19:04.830  INFO 50396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 20:19:04.872  INFO 50396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+2022-04-13 20:19:05.526  INFO 50396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 20:19:05.536  INFO 50396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 20:19:05.537  INFO 50396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 20:19:05.538  INFO 50396 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 20:19:05.539  INFO 50396 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 20:19:05.539  INFO 50396 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 20:19:05.543  INFO 50396 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 20:19:05.793  INFO 50396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 20:19:05.793  INFO 50396 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2220 ms
+2022-04-13 20:19:13.351  INFO 50396 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 20:19:15.523  INFO 50396 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 20:19:15.524  INFO 50396 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 20:19:15.547  INFO 50396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 20:19:16.101  INFO 50396 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 13.059 seconds (JVM running for 15.158)
+2022-04-13 20:19:16.993  INFO 50396 --- [RMI TCP Connection(4)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 20:19:16.994  INFO 50396 --- [RMI TCP Connection(4)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 20:19:16.995  INFO 50396 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 20:19:16.995  INFO 50396 --- [RMI TCP Connection(4)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 20:19:17.445  INFO 50396 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 20:23:09.124  INFO 47808 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 47808 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 20:23:09.126  INFO 47808 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 20:23:10.303  INFO 47808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 20:23:10.305  INFO 47808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 20:23:10.333  INFO 47808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2022-04-13 20:23:10.765  INFO 47808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 20:23:10.772  INFO 47808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 20:23:10.772  INFO 47808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 20:23:10.773  INFO 47808 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 20:23:10.773  INFO 47808 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 20:23:10.773  INFO 47808 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 20:23:10.776  INFO 47808 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 20:23:10.951  INFO 47808 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 20:23:10.951  INFO 47808 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1782 ms
+2022-04-13 20:23:18.656  INFO 47808 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 20:23:20.633  INFO 47808 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 20:23:20.634  INFO 47808 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 20:23:20.653  INFO 47808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 20:23:21.132  INFO 47808 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 12.521 seconds (JVM running for 14.419)
+2022-04-13 20:23:22.642  INFO 47808 --- [RMI TCP Connection(2)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 20:23:22.643  INFO 47808 --- [RMI TCP Connection(2)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 20:23:22.644  INFO 47808 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 20:23:22.644  INFO 47808 --- [RMI TCP Connection(2)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 20:23:23.082  INFO 47808 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 20:24:32.920  INFO 47808 --- [http-nio-80-exec-10] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:24:32.921  INFO 47808 --- [http-nio-80-exec-11] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:24:32.921  INFO 47808 --- [http-nio-80-exec-12] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:24:32.926  INFO 47808 --- [http-nio-80-exec-9] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:24:33.015  INFO 47808 --- [http-nio-80-exec-16] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:24:33.015  INFO 47808 --- [http-nio-80-exec-15] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:24:33.018  INFO 47808 --- [http-nio-80-exec-13] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:24:33.024  INFO 47808 --- [http-nio-80-exec-14] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:24:34.763  INFO 47808 --- [http-nio-80-exec-17] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:24:34.765  INFO 47808 --- [http-nio-80-exec-19] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:24:34.766  INFO 47808 --- [http-nio-80-exec-20] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:24:34.779  INFO 47808 --- [http-nio-80-exec-18] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:24:34.830  INFO 47808 --- [http-nio-80-exec-21] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:24:34.832  INFO 47808 --- [http-nio-80-exec-22] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:24:34.833  INFO 47808 --- [http-nio-80-exec-23] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:24:34.858  INFO 47808 --- [http-nio-80-exec-24] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:24:37.002  INFO 47808 --- [http-nio-80-exec-28] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:24:37.006  INFO 47808 --- [http-nio-80-exec-29] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:24:37.015  INFO 47808 --- [http-nio-80-exec-26] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:24:37.233  INFO 47808 --- [http-nio-80-exec-27] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:25:59.278  INFO 47808 --- [http-nio-80-exec-42] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:25:59.278  INFO 47808 --- [http-nio-80-exec-41] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:25:59.292  INFO 47808 --- [http-nio-80-exec-40] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:25:59.347  INFO 47808 --- [http-nio-80-exec-43] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:25:59.349  INFO 47808 --- [http-nio-80-exec-44] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:25:59.374  INFO 47808 --- [http-nio-80-exec-45] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:25:59.517  INFO 47808 --- [http-nio-80-exec-39] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:25:59.610  INFO 47808 --- [http-nio-80-exec-46] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:26:26.597  INFO 47808 --- [http-nio-80-exec-57] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:26:26.597  INFO 47808 --- [http-nio-80-exec-59] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:26:26.598  INFO 47808 --- [http-nio-80-exec-58] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:26:26.606  INFO 47808 --- [http-nio-80-exec-56] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:26:26.663  INFO 47808 --- [http-nio-80-exec-60] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:26:26.668  INFO 47808 --- [http-nio-80-exec-62] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:26:26.678  INFO 47808 --- [http-nio-80-exec-61] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:26:26.684  INFO 47808 --- [http-nio-80-exec-63] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:26:41.088  INFO 47808 --- [http-nio-80-exec-78] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:26:41.088  INFO 47808 --- [http-nio-80-exec-79] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:26:41.090  INFO 47808 --- [http-nio-80-exec-80] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:26:41.098  INFO 47808 --- [http-nio-80-exec-77] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:26:41.151  INFO 47808 --- [http-nio-80-exec-81] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:26:41.153  INFO 47808 --- [http-nio-80-exec-83] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:26:41.153  INFO 47808 --- [http-nio-80-exec-82] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:26:41.175  INFO 47808 --- [http-nio-80-exec-84] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:26:45.311  INFO 47808 --- [http-nio-80-exec-94] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:26:45.311  INFO 47808 --- [http-nio-80-exec-91] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:26:45.312  INFO 47808 --- [http-nio-80-exec-93] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:26:45.326  INFO 47808 --- [http-nio-80-exec-92] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:26:45.377  INFO 47808 --- [http-nio-80-exec-95] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:26:45.380  INFO 47808 --- [http-nio-80-exec-97] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:26:45.380  INFO 47808 --- [http-nio-80-exec-96] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:26:45.402  INFO 47808 --- [http-nio-80-exec-98] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:26:47.948  INFO 47808 --- [http-nio-80-exec-108] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:26:47.950  INFO 47808 --- [http-nio-80-exec-109] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:26:47.951  INFO 47808 --- [http-nio-80-exec-110] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:26:47.965  INFO 47808 --- [http-nio-80-exec-107] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:26:48.016  INFO 47808 --- [http-nio-80-exec-111] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:26:48.019  INFO 47808 --- [http-nio-80-exec-113] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:26:48.019  INFO 47808 --- [http-nio-80-exec-112] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:26:48.041  INFO 47808 --- [http-nio-80-exec-114] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:26:52.786  INFO 47808 --- [http-nio-80-exec-124] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:26:52.787  INFO 47808 --- [http-nio-80-exec-122] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:26:52.787  INFO 47808 --- [http-nio-80-exec-123] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:26:52.801  INFO 47808 --- [http-nio-80-exec-121] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:26:52.852  INFO 47808 --- [http-nio-80-exec-125] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:26:52.856  INFO 47808 --- [http-nio-80-exec-127] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:26:52.857  INFO 47808 --- [http-nio-80-exec-126] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:26:52.874  INFO 47808 --- [http-nio-80-exec-128] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:28:07.479  INFO 47808 --- [http-nio-80-exec-146] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:28:07.479  INFO 47808 --- [http-nio-80-exec-144] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:28:07.479  INFO 47808 --- [http-nio-80-exec-143] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:28:07.494  INFO 47808 --- [http-nio-80-exec-145] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:28:07.545  INFO 47808 --- [http-nio-80-exec-148] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:28:07.545  INFO 47808 --- [http-nio-80-exec-147] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:28:07.545  INFO 47808 --- [http-nio-80-exec-149] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:28:07.570  INFO 47808 --- [http-nio-80-exec-150] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:28:12.228  INFO 47808 --- [http-nio-80-exec-157] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:28:12.230  INFO 47808 --- [http-nio-80-exec-160] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:28:12.244  INFO 47808 --- [http-nio-80-exec-158] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:28:12.294  INFO 47808 --- [http-nio-80-exec-161] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:28:12.296  INFO 47808 --- [http-nio-80-exec-162] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:28:12.320  INFO 47808 --- [http-nio-80-exec-163] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:28:12.473  INFO 47808 --- [http-nio-80-exec-159] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:28:12.551  INFO 47808 --- [http-nio-80-exec-164] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:28:20.885  INFO 47808 --- [http-nio-80-exec-179] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:28:20.886  INFO 47808 --- [http-nio-80-exec-180] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:28:20.889  INFO 47808 --- [http-nio-80-exec-181] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:28:20.902  INFO 47808 --- [http-nio-80-exec-178] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:28:20.948  INFO 47808 --- [http-nio-80-exec-182] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:28:20.956  INFO 47808 --- [http-nio-80-exec-184] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:28:20.956  INFO 47808 --- [http-nio-80-exec-183] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:28:20.977  INFO 47808 --- [http-nio-80-exec-185] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:28:47.215  INFO 47808 --- [http-nio-80-exec-201] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:28:47.217  INFO 47808 --- [http-nio-80-exec-202] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:28:47.218  INFO 47808 --- [http-nio-80-exec-203] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:28:47.232  INFO 47808 --- [http-nio-80-exec-200] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:28:47.285  INFO 47808 --- [http-nio-80-exec-204] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:28:47.296  INFO 47808 --- [http-nio-80-exec-206] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:28:47.298  INFO 47808 --- [http-nio-80-exec-207] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:28:47.306  INFO 47808 --- [http-nio-80-exec-205] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:29:02.513  INFO 47808 --- [http-nio-80-exec-222] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:29:02.513  INFO 47808 --- [http-nio-80-exec-223] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:29:02.530  INFO 47808 --- [http-nio-80-exec-224] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:29:02.556  INFO 47808 --- [http-nio-80-exec-225] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:29:02.578  INFO 47808 --- [http-nio-80-exec-227] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:29:02.578  INFO 47808 --- [http-nio-80-exec-226] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:29:02.603  INFO 47808 --- [http-nio-80-exec-228] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:29:02.621  INFO 47808 --- [http-nio-80-exec-229] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:29:08.842  INFO 47808 --- [http-nio-80-exec-246] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:29:08.842  INFO 47808 --- [http-nio-80-exec-245] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:29:08.907  INFO 47808 --- [http-nio-80-exec-248] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:29:08.907  INFO 47808 --- [http-nio-80-exec-249] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:29:08.944  INFO 47808 --- [http-nio-80-exec-247] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:29:09.016  INFO 47808 --- [http-nio-80-exec-250] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:29:09.093  INFO 47808 --- [http-nio-80-exec-244] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:29:09.167  INFO 47808 --- [http-nio-80-exec-251] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:29:22.851  INFO 47808 --- [http-nio-80-exec-266] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:29:22.854  INFO 47808 --- [http-nio-80-exec-268] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:29:22.856  INFO 47808 --- [http-nio-80-exec-269] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:29:22.916  INFO 47808 --- [http-nio-80-exec-270] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:29:22.924  INFO 47808 --- [http-nio-80-exec-272] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:29:22.926  INFO 47808 --- [http-nio-80-exec-271] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:29:23.108  INFO 47808 --- [http-nio-80-exec-267] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:29:23.181  INFO 47808 --- [http-nio-80-exec-273] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:29:28.080  INFO 47808 --- [http-nio-80-exec-288] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:29:28.081  INFO 47808 --- [http-nio-80-exec-291] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:29:28.081  INFO 47808 --- [http-nio-80-exec-290] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:29:28.099  INFO 47808 --- [http-nio-80-exec-289] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:29:28.148  INFO 47808 --- [http-nio-80-exec-293] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:29:28.149  INFO 47808 --- [http-nio-80-exec-292] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:29:28.149  INFO 47808 --- [http-nio-80-exec-294] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:29:28.177  INFO 47808 --- [http-nio-80-exec-295] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:29:36.600  INFO 47808 --- [http-nio-80-exec-311] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:29:36.602  INFO 47808 --- [http-nio-80-exec-313] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:29:36.603  INFO 47808 --- [http-nio-80-exec-312] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:29:36.618  INFO 47808 --- [http-nio-80-exec-310] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:29:36.664  INFO 47808 --- [http-nio-80-exec-315] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:29:36.667  INFO 47808 --- [http-nio-80-exec-316] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:29:36.669  INFO 47808 --- [http-nio-80-exec-314] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:29:36.692  INFO 47808 --- [http-nio-80-exec-317] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
