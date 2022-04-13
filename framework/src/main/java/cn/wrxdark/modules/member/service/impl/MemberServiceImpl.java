@@ -13,6 +13,7 @@ import cn.wrxdark.modules.member.entity.dos.Member;
 import cn.wrxdark.modules.member.mapper.MemberMapper;
 import cn.wrxdark.modules.member.service.MemberService;
 
+import cn.wrxdark.util.SM2Util;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 
@@ -45,12 +46,11 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
     @Override
     public Token login(String email, String password) {
         Member member = memberMapper.selectByEmail(email);  //查询信息
-        //判断用户是否纯在
+        //判断用户是否存在
         if (member == null) {
             throw new ServiceException(ResultCode.USER_EMAIL_NOT_EXIST);
         }
-        //判断密码是否正确
-        if (!Objects.equals(member.getPassword(), password)) {
+        if (!SM2Util.verify(password+member.getSalt(),member.getPassword())) {
             throw new ServiceException(ResultCode.USER_PASSWORD_ERROR);
         }
         //创建一个token
@@ -67,11 +67,10 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         }
         member = new Member();
         member.setEmail(email);
-        member.setPassword(password);
+        member.setSalt(getSalt());
+        member.setPassword(SM2Util.encrypt(password+member.getSalt()));
         member.setName(UUID.randomUUID().toString());
-
         memberMapper.insert(member);
-
         return memberTokenGenerate.createToken(member, false);
     }
 
@@ -82,12 +81,13 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
             throw new ServiceException(ResultCode.USER_EMAIL_NOT_EXIST);
         }
         //判断旧密码是否正确
-        if (!member.getPassword().equals(password)) {
+        if (!SM2Util.verify(password+member.getSalt(),member.getPassword())) {
             throw new ServiceException(ResultCode.USER_OLD_PASSWORD_ERROR);
         }
         //修改密码
+        newPassword=SM2Util.encrypt(newPassword+member.getSalt());
         member.setPassword(newPassword);
-        memberMapper.updatePassword(email, password);
+        memberMapper.updatePassword(email, newPassword);
         return this.login(member.getEmail(),member.getPassword());
     }
 
@@ -101,7 +101,6 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
     @Override
     public Member getUserInfo() {
         AuthUser tokenUser = UserContext.getCurrentUser();
-
         if (tokenUser == null) {
             throw new ServiceException(ResultCode.USER_NOT_LOGIN);
         }
@@ -123,9 +122,9 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         if (member == null) {
             throw new ServiceException(ResultCode.USER_EMAIL_NOT_EXIST);
         }
+        password=SM2Util.encrypt(password+member.getSalt());
         member.setPassword(password);
         memberMapper.updatePassword(email,password);
-
         return memberTokenGenerate.createToken(member, false);
     }
 
@@ -157,6 +156,18 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         iPage = memberMapper.selectPage(iPage,queryWrapper);
         log.info("获得了用户列表");
         return iPage;
+    }
+
+    private String model = "abcdefghijklmnopqrstuvwxyz1234567890";
+    private int saltSize = 4;
+    public String getSalt() {
+        StringBuffer salt = new StringBuffer();
+        char[] m = model.toCharArray();
+        for (int i = 0; i < saltSize; i++) {
+            char c = m[(int) (Math.random() * 36)];
+            salt = salt.append(c);
+        }
+        return salt.toString();
     }
 
     //token

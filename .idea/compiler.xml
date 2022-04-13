@@ -23,6 +23,7 @@
       <module name="consumer" options="-parameters" />
       <module name="framework" options="-parameters" />
       <module name="springboot-hello" options="-parameters" />
+      <module name="tos" options="-parameters" />
     </option>
   </component>
 </project>

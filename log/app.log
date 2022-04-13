@@ -626,3 +626,1133 @@
 2022-04-13 21:01:28.918  INFO 19040 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2022-04-13 21:01:28.918  INFO 19040 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2022-04-13 21:01:29.424  INFO 19040 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 21:04:56.632  INFO 47160 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 47160 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 21:04:56.635  INFO 47160 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 21:04:57.752  INFO 47160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 21:04:57.754  INFO 47160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 21:04:57.789  INFO 47160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2022-04-13 21:04:58.235  INFO 47160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 21:04:58.245  INFO 47160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 21:04:58.245  INFO 47160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 21:04:58.246  INFO 47160 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 21:04:58.247  INFO 47160 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 21:04:58.247  INFO 47160 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 21:04:58.250  INFO 47160 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 21:04:58.483  INFO 47160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 21:04:58.484  INFO 47160 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1806 ms
+2022-04-13 21:05:04.537  INFO 47160 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 21:05:06.077  INFO 47160 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 21:05:06.078  INFO 47160 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 21:05:06.101  INFO 47160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 21:05:06.564  INFO 47160 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 10.417 seconds (JVM running for 12.226)
+2022-04-13 21:05:07.914  INFO 47160 --- [RMI TCP Connection(3)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 21:05:07.914  INFO 47160 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 21:05:07.915  INFO 47160 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 21:05:07.915  INFO 47160 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 21:05:08.316  INFO 47160 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 21:08:23.551  INFO 46304 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 46304 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 21:08:23.553  INFO 46304 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 21:08:24.621  INFO 46304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 21:08:24.623  INFO 46304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 21:08:24.656  INFO 46304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2022-04-13 21:08:25.089  INFO 46304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 21:08:25.095  INFO 46304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 21:08:25.095  INFO 46304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 21:08:25.096  INFO 46304 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 21:08:25.097  INFO 46304 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 21:08:25.097  INFO 46304 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 21:08:25.099  INFO 46304 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 21:08:25.255  INFO 46304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 21:08:25.255  INFO 46304 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1660 ms
+2022-04-13 21:08:31.855  INFO 46304 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 21:08:33.574  INFO 46304 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 21:08:33.575  INFO 46304 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 21:08:33.595  INFO 46304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 21:08:34.138  INFO 46304 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 11.067 seconds (JVM running for 12.941)
+2022-04-13 21:08:35.165  INFO 46304 --- [RMI TCP Connection(1)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 21:08:35.165  INFO 46304 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 21:08:35.166  INFO 46304 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 21:08:35.167  INFO 46304 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-13 21:08:35.540  INFO 46304 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 21:12:30.582  INFO 46304 --- [http-nio-80-exec-12] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 21:12:30.584  INFO 46304 --- [http-nio-80-exec-11] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 21:12:30.589  INFO 46304 --- [http-nio-80-exec-10] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 21:12:30.609  INFO 46304 --- [http-nio-80-exec-13] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 21:29:06.759  INFO 49028 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 49028 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 21:29:06.762  INFO 49028 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 21:29:08.165  INFO 49028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 21:29:08.167  INFO 49028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 21:29:08.199  INFO 49028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2022-04-13 21:29:08.722  INFO 49028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 21:29:08.729  INFO 49028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 21:29:08.730  INFO 49028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 21:29:08.731  INFO 49028 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 21:29:08.731  INFO 49028 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 21:29:08.731  INFO 49028 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 21:29:08.734  INFO 49028 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 21:29:08.913  INFO 49028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 21:29:08.914  INFO 49028 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2092 ms
+2022-04-13 21:29:16.213  INFO 49028 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 21:29:17.852  INFO 49028 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 21:29:17.853  INFO 49028 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 21:29:17.872  INFO 49028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 21:29:18.315  INFO 49028 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 12.15 seconds (JVM running for 14.337)
+2022-04-13 21:29:19.156  INFO 49028 --- [RMI TCP Connection(1)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 21:29:19.156  INFO 49028 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 21:29:19.157  INFO 49028 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 21:29:19.157  INFO 49028 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 21:29:19.556  INFO 49028 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 21:35:24.005  INFO 46148 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 46148 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 21:35:24.007  INFO 46148 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 21:35:25.106  INFO 46148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 21:35:25.108  INFO 46148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 21:35:25.137  INFO 46148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2022-04-13 21:35:25.554  INFO 46148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 21:35:25.562  INFO 46148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 21:35:25.562  INFO 46148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 21:35:25.563  INFO 46148 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 21:35:25.563  INFO 46148 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 21:35:25.563  INFO 46148 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 21:35:25.566  INFO 46148 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 21:35:25.738  INFO 46148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 21:35:25.738  INFO 46148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1688 ms
+2022-04-13 21:35:32.510  INFO 46148 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 21:35:34.437  INFO 46148 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 21:35:34.438  INFO 46148 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 21:35:34.458  INFO 46148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 21:35:35.032  INFO 46148 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 11.487 seconds (JVM running for 13.332)
+2022-04-13 21:35:35.902  INFO 46148 --- [RMI TCP Connection(2)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 21:35:35.902  INFO 46148 --- [RMI TCP Connection(2)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 21:35:35.903  INFO 46148 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 21:35:35.903  INFO 46148 --- [RMI TCP Connection(2)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 21:35:36.734  INFO 46148 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 21:36:09.077  INFO 46148 --- [http-nio-80-exec-8] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 21:36:09.077  INFO 46148 --- [http-nio-80-exec-7] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 21:36:09.078  INFO 46148 --- [http-nio-80-exec-6] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 21:36:09.084  INFO 46148 --- [http-nio-80-exec-5] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 21:36:52.958  INFO 38588 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 38588 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 21:36:52.961  INFO 38588 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 21:36:54.048  INFO 38588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 21:36:54.050  INFO 38588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 21:36:54.080  INFO 38588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2022-04-13 21:36:54.489  INFO 38588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 21:36:54.496  INFO 38588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 21:36:54.497  INFO 38588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 21:36:54.498  INFO 38588 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 21:36:54.498  INFO 38588 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 21:36:54.498  INFO 38588 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 21:36:54.501  INFO 38588 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 21:36:54.675  INFO 38588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 21:36:54.675  INFO 38588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1673 ms
+2022-04-13 21:37:01.443  INFO 38588 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 21:37:03.225  INFO 38588 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 21:37:03.226  INFO 38588 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 21:37:03.245  INFO 38588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 21:37:03.702  INFO 38588 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 11.221 seconds (JVM running for 13.088)
+2022-04-13 21:37:03.768  INFO 38588 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 21:37:04.123  INFO 38588 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 21:37:05.307  INFO 38588 --- [RMI TCP Connection(3)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 21:37:05.307  INFO 38588 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 21:37:05.309  INFO 38588 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 21:39:54.223  INFO 52408 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 52408 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 21:39:54.226  INFO 52408 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 21:39:55.418  INFO 52408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 21:39:55.420  INFO 52408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 21:39:55.449  INFO 52408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2022-04-13 21:39:55.930  INFO 52408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 21:39:55.937  INFO 52408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 21:39:55.937  INFO 52408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 21:39:55.938  INFO 52408 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 21:39:55.938  INFO 52408 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 21:39:55.938  INFO 52408 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 21:39:55.941  INFO 52408 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 21:39:56.121  INFO 52408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 21:39:56.121  INFO 52408 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1846 ms
+2022-04-13 21:40:04.535  INFO 52408 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 21:40:06.214  INFO 52408 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 21:40:06.215  INFO 52408 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 21:40:06.236  INFO 52408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 21:40:06.721  INFO 52408 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 13.023 seconds (JVM running for 14.8)
+2022-04-13 21:40:07.609  INFO 52408 --- [RMI TCP Connection(2)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 21:40:07.609  INFO 52408 --- [RMI TCP Connection(2)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 21:40:07.610  INFO 52408 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 21:40:07.611  INFO 52408 --- [RMI TCP Connection(2)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-13 21:40:08.077  INFO 52408 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 21:55:45.248  INFO 53072 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 53072 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 21:55:45.251  INFO 53072 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 21:55:46.409  INFO 53072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 21:55:46.411  INFO 53072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 21:55:46.443  INFO 53072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2022-04-13 21:55:46.888  INFO 53072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 21:55:46.895  INFO 53072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 21:55:46.895  INFO 53072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 21:55:46.896  INFO 53072 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 21:55:46.896  INFO 53072 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 21:55:46.897  INFO 53072 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 21:55:46.899  INFO 53072 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 21:55:47.052  INFO 53072 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 21:55:47.052  INFO 53072 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1751 ms
+2022-04-13 21:55:53.431  INFO 53072 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 21:55:55.160  INFO 53072 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 21:55:55.161  INFO 53072 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 21:55:55.181  INFO 53072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 21:55:55.655  INFO 53072 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 10.952 seconds (JVM running for 12.796)
+2022-04-13 21:55:56.100  INFO 53072 --- [RMI TCP Connection(1)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 21:55:56.100  INFO 53072 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 21:55:56.102  INFO 53072 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 21:55:57.254  INFO 53072 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 21:55:57.607  INFO 53072 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 21:57:45.329  INFO 50876 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 50876 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 21:57:45.331  INFO 50876 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 21:57:46.497  INFO 50876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 21:57:46.499  INFO 50876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 21:57:46.529  INFO 50876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2022-04-13 21:57:46.975  INFO 50876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 21:57:46.982  INFO 50876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 21:57:46.982  INFO 50876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 21:57:46.983  INFO 50876 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 21:57:46.984  INFO 50876 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 21:57:46.984  INFO 50876 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 21:57:46.986  INFO 50876 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 21:57:47.167  INFO 50876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 21:57:47.168  INFO 50876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1794 ms
+2022-04-13 21:57:53.720  INFO 50876 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 21:57:55.577  INFO 50876 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 21:57:55.578  INFO 50876 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 21:57:55.597  INFO 50876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 21:57:56.026  INFO 50876 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 11.148 seconds (JVM running for 13.894)
+2022-04-13 21:57:56.747  INFO 50876 --- [RMI TCP Connection(1)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 21:57:56.748  INFO 50876 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 21:57:56.749  INFO 50876 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 21:57:56.749  INFO 50876 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 21:57:57.103  INFO 50876 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 21:58:29.972  INFO 47432 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 47432 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 21:58:29.975  INFO 47432 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 21:58:31.147  INFO 47432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 21:58:31.148  INFO 47432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 21:58:31.178  INFO 47432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2022-04-13 21:58:31.600  INFO 47432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 21:58:31.607  INFO 47432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 21:58:31.607  INFO 47432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 21:58:31.608  INFO 47432 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 21:58:31.608  INFO 47432 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 21:58:31.608  INFO 47432 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 21:58:31.611  INFO 47432 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 21:58:31.775  INFO 47432 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 21:58:31.775  INFO 47432 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1752 ms
+2022-04-13 21:58:38.575  INFO 47432 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 21:58:40.187  INFO 47432 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 21:58:40.188  INFO 47432 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 21:58:40.341  INFO 47432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 21:58:40.654  INFO 47432 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 11.393 seconds (JVM running for 13.34)
+2022-04-13 21:58:41.190  INFO 47432 --- [RMI TCP Connection(1)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 21:58:41.190  INFO 47432 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 21:58:41.192  INFO 47432 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-13 21:58:41.192  INFO 47432 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 21:58:41.592  INFO 47432 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 22:00:11.556  INFO 52400 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 52400 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 22:00:11.559  INFO 52400 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 22:00:12.634  INFO 52400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 22:00:12.636  INFO 52400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 22:00:12.668  INFO 52400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2022-04-13 22:00:13.122  INFO 52400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 22:00:13.128  INFO 52400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 22:00:13.128  INFO 52400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 22:00:13.129  INFO 52400 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 22:00:13.130  INFO 52400 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 22:00:13.130  INFO 52400 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 22:00:13.132  INFO 52400 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 22:00:13.296  INFO 52400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 22:00:13.296  INFO 52400 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1695 ms
+2022-04-13 22:00:19.360  INFO 52400 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 22:00:20.893  INFO 52400 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 22:00:20.894  INFO 52400 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 22:00:20.915  INFO 52400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 22:00:21.435  INFO 52400 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 10.333 seconds (JVM running for 12.116)
+2022-04-13 22:00:23.158  INFO 52400 --- [RMI TCP Connection(3)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:00:23.158  INFO 52400 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:00:23.159  INFO 52400 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 22:00:23.160  INFO 52400 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-13 22:00:23.541  INFO 52400 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 22:06:09.335 ERROR 52400 --- [http-nio-80-exec-3] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[ServiceException]:20010-密码不正确
+
+cn.wrxdark.common.exception.ServiceException: null
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl.login(MemberServiceImpl.java:55)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$FastClassBySpringCGLIB$$93ff0915.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$EnhancerBySpringCGLIB$$3f0b11f.login(<generated>)
+	at cn.wrxdark.controller.member.MemberBuyerController.userLogin(MemberBuyerController.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-04-13 22:07:59.863  INFO 53548 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 53548 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 22:07:59.864  INFO 53548 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 22:08:00.821  INFO 53548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 22:08:00.822  INFO 53548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 22:08:00.850  INFO 53548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2022-04-13 22:08:01.228  INFO 53548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 22:08:01.234  INFO 53548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 22:08:01.234  INFO 53548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 22:08:01.235  INFO 53548 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 22:08:01.235  INFO 53548 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 22:08:01.235  INFO 53548 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 22:08:01.237  INFO 53548 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 22:08:01.380  INFO 53548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 22:08:01.380  INFO 53548 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1482 ms
+2022-04-13 22:08:08.525  INFO 53548 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 22:08:10.456  INFO 53548 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 22:08:10.457  INFO 53548 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 22:08:10.475  INFO 53548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 22:08:10.905  INFO 53548 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 11.417 seconds (JVM running for 12.889)
+2022-04-13 22:08:11.631  INFO 53548 --- [RMI TCP Connection(4)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:08:11.631  INFO 53548 --- [RMI TCP Connection(4)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:08:11.632  INFO 53548 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 22:08:11.633  INFO 53548 --- [RMI TCP Connection(4)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-13 22:08:11.987  INFO 53548 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 22:08:12.400 ERROR 53548 --- [http-nio-80-exec-2] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[ServiceException]:20010-密码不正确
+
+cn.wrxdark.common.exception.ServiceException: null
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl.login(MemberServiceImpl.java:55)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$FastClassBySpringCGLIB$$93ff0915.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$EnhancerBySpringCGLIB$$95a6f3a4.login(<generated>)
+	at cn.wrxdark.controller.member.MemberBuyerController.userLogin(MemberBuyerController.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-04-13 22:08:15.373 ERROR 53548 --- [http-nio-80-exec-3] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[ServiceException]:20010-密码不正确
+
+cn.wrxdark.common.exception.ServiceException: null
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl.login(MemberServiceImpl.java:55)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$FastClassBySpringCGLIB$$93ff0915.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$EnhancerBySpringCGLIB$$95a6f3a4.login(<generated>)
+	at cn.wrxdark.controller.member.MemberBuyerController.userLogin(MemberBuyerController.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-04-13 22:08:16.057 ERROR 53548 --- [http-nio-80-exec-4] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[ServiceException]:20010-密码不正确
+
+cn.wrxdark.common.exception.ServiceException: null
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl.login(MemberServiceImpl.java:55)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$FastClassBySpringCGLIB$$93ff0915.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$EnhancerBySpringCGLIB$$95a6f3a4.login(<generated>)
+	at cn.wrxdark.controller.member.MemberBuyerController.userLogin(MemberBuyerController.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-04-13 22:08:16.205 ERROR 53548 --- [http-nio-80-exec-5] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[ServiceException]:20010-密码不正确
+
+cn.wrxdark.common.exception.ServiceException: null
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl.login(MemberServiceImpl.java:55)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$FastClassBySpringCGLIB$$93ff0915.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$EnhancerBySpringCGLIB$$95a6f3a4.login(<generated>)
+	at cn.wrxdark.controller.member.MemberBuyerController.userLogin(MemberBuyerController.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-04-13 22:08:16.371 ERROR 53548 --- [http-nio-80-exec-6] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[ServiceException]:20010-密码不正确
+
+cn.wrxdark.common.exception.ServiceException: null
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl.login(MemberServiceImpl.java:55)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$FastClassBySpringCGLIB$$93ff0915.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$EnhancerBySpringCGLIB$$95a6f3a4.login(<generated>)
+	at cn.wrxdark.controller.member.MemberBuyerController.userLogin(MemberBuyerController.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-04-13 22:08:16.741 ERROR 53548 --- [http-nio-80-exec-8] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[ServiceException]:20010-密码不正确
+
+cn.wrxdark.common.exception.ServiceException: null
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl.login(MemberServiceImpl.java:55)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$FastClassBySpringCGLIB$$93ff0915.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$EnhancerBySpringCGLIB$$95a6f3a4.login(<generated>)
+	at cn.wrxdark.controller.member.MemberBuyerController.userLogin(MemberBuyerController.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-04-13 22:08:16.776 ERROR 53548 --- [http-nio-80-exec-7] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[ServiceException]:20010-密码不正确
+
+cn.wrxdark.common.exception.ServiceException: null
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl.login(MemberServiceImpl.java:55)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$FastClassBySpringCGLIB$$93ff0915.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$EnhancerBySpringCGLIB$$95a6f3a4.login(<generated>)
+	at cn.wrxdark.controller.member.MemberBuyerController.userLogin(MemberBuyerController.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-04-13 22:08:16.858 ERROR 53548 --- [http-nio-80-exec-9] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[ServiceException]:20010-密码不正确
+
+cn.wrxdark.common.exception.ServiceException: null
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl.login(MemberServiceImpl.java:55)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$FastClassBySpringCGLIB$$93ff0915.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at cn.wrxdark.modules.member.service.impl.MemberServiceImpl$$EnhancerBySpringCGLIB$$95a6f3a4.login(<generated>)
+	at cn.wrxdark.controller.member.MemberBuyerController.userLogin(MemberBuyerController.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-04-13 22:21:45.611  INFO 47048 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 47048 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 22:21:45.614  INFO 47048 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 22:21:46.758  INFO 47048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 22:21:46.760  INFO 47048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 22:21:46.790  INFO 47048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2022-04-13 22:21:47.207  INFO 47048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 22:21:47.214  INFO 47048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 22:21:47.214  INFO 47048 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 22:21:47.215  INFO 47048 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 22:21:47.215  INFO 47048 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 22:21:47.215  INFO 47048 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 22:21:47.218  INFO 47048 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 22:21:47.379  INFO 47048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 22:21:47.380  INFO 47048 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1718 ms
+2022-04-13 22:21:53.684  INFO 47048 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 22:21:55.351  INFO 47048 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 22:21:55.352  INFO 47048 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 22:21:55.370  INFO 47048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 22:21:55.814  INFO 47048 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 10.721 seconds (JVM running for 12.717)
+2022-04-13 22:21:56.061  INFO 47048 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 22:21:56.643  INFO 47048 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 22:21:57.372  INFO 47048 --- [RMI TCP Connection(3)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:21:57.372  INFO 47048 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:21:57.373  INFO 47048 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 22:22:43.079  INFO 31324 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 31324 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 22:22:43.081  INFO 31324 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 22:22:44.144  INFO 31324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 22:22:44.146  INFO 31324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 22:22:44.176  INFO 31324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2022-04-13 22:22:44.585  INFO 31324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 22:22:44.591  INFO 31324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 22:22:44.591  INFO 31324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 22:22:44.592  INFO 31324 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 22:22:44.592  INFO 31324 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 22:22:44.592  INFO 31324 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 22:22:44.595  INFO 31324 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 22:22:44.744  INFO 31324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 22:22:44.745  INFO 31324 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1625 ms
+2022-04-13 22:22:51.043  INFO 31324 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 22:22:52.750  INFO 31324 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 22:22:52.751  INFO 31324 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 22:22:52.772  INFO 31324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 22:22:53.313  INFO 31324 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 10.669 seconds (JVM running for 12.699)
+2022-04-13 22:22:54.045  INFO 31324 --- [RMI TCP Connection(2)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:22:54.045  INFO 31324 --- [RMI TCP Connection(2)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:22:54.046  INFO 31324 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 22:22:54.047  INFO 31324 --- [RMI TCP Connection(2)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-13 22:22:54.765  INFO 31324 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 22:26:51.586  INFO 51788 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 51788 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 22:26:51.588  INFO 51788 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 22:26:52.667  INFO 51788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 22:26:52.669  INFO 51788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 22:26:52.697  INFO 51788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2022-04-13 22:26:53.105  INFO 51788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 22:26:53.112  INFO 51788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 22:26:53.112  INFO 51788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 22:26:53.113  INFO 51788 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 22:26:53.113  INFO 51788 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 22:26:53.113  INFO 51788 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 22:26:53.115  INFO 51788 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 22:26:53.267  INFO 51788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 22:26:53.267  INFO 51788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1638 ms
+2022-04-13 22:26:59.745  INFO 51788 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 22:27:01.495  INFO 51788 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 22:27:01.496  INFO 51788 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 22:27:01.515  INFO 51788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 22:27:01.969  INFO 51788 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 10.853 seconds (JVM running for 12.842)
+2022-04-13 22:27:03.431  INFO 51788 --- [RMI TCP Connection(2)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:27:03.431  INFO 51788 --- [RMI TCP Connection(2)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:27:03.432  INFO 51788 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 22:27:03.433  INFO 51788 --- [RMI TCP Connection(2)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-13 22:27:04.263  INFO 51788 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 22:40:24.904  INFO 48620 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 48620 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 22:40:24.906  INFO 48620 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 22:40:25.795  INFO 48620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 22:40:25.796  INFO 48620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 22:40:25.822  INFO 48620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2022-04-13 22:40:26.198  INFO 48620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 22:40:26.204  INFO 48620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 22:40:26.204  INFO 48620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 22:40:26.205  INFO 48620 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 22:40:26.205  INFO 48620 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 22:40:26.205  INFO 48620 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 22:40:26.208  INFO 48620 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 22:40:26.361  INFO 48620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 22:40:26.361  INFO 48620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1420 ms
+2022-04-13 22:40:32.208  INFO 48620 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 22:40:33.743  INFO 48620 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 22:40:33.744  INFO 48620 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 22:40:33.764  INFO 48620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 22:40:34.239  INFO 48620 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 9.732 seconds (JVM running for 11.341)
+2022-04-13 22:40:35.666  INFO 48620 --- [RMI TCP Connection(3)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:40:35.666  INFO 48620 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:40:35.667  INFO 48620 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 22:40:35.667  INFO 48620 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 22:40:36.385  INFO 48620 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 22:48:32.863  INFO 53504 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 53504 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 22:48:32.866  INFO 53504 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 22:48:33.753  INFO 53504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 22:48:33.755  INFO 53504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 22:48:33.782  INFO 53504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2022-04-13 22:48:34.158  INFO 53504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 22:48:34.163  INFO 53504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 22:48:34.163  INFO 53504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 22:48:34.164  INFO 53504 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 22:48:34.165  INFO 53504 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 22:48:34.165  INFO 53504 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 22:48:34.167  INFO 53504 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 22:48:34.301  INFO 53504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 22:48:34.301  INFO 53504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1400 ms
+2022-04-13 22:48:39.987  INFO 53504 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 22:48:41.530  INFO 53504 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 22:48:41.531  INFO 53504 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 22:48:41.550  INFO 53504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 22:48:42.039  INFO 53504 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 9.539 seconds (JVM running for 11.128)
+2022-04-13 22:48:42.822  INFO 53504 --- [RMI TCP Connection(1)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:48:42.823  INFO 53504 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:48:42.824  INFO 53504 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 22:48:42.824  INFO 53504 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 22:48:43.208  INFO 53504 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 22:50:04.051  INFO 51464 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 51464 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 22:50:04.053  INFO 51464 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 22:50:05.134  INFO 51464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 22:50:05.135  INFO 51464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 22:50:05.163  INFO 51464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2022-04-13 22:50:05.592  INFO 51464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 22:50:05.599  INFO 51464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 22:50:05.600  INFO 51464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 22:50:05.601  INFO 51464 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 22:50:05.601  INFO 51464 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 22:50:05.601  INFO 51464 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 22:50:05.604  INFO 51464 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 22:50:05.773  INFO 51464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 22:50:05.773  INFO 51464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1686 ms
+2022-04-13 22:50:12.346  INFO 51464 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 22:50:13.966  INFO 51464 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 22:50:13.967  INFO 51464 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 22:50:13.984  INFO 51464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 22:50:14.431  INFO 51464 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 10.779 seconds (JVM running for 12.351)
+2022-04-13 22:50:15.157  INFO 51464 --- [RMI TCP Connection(4)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:50:15.158  INFO 51464 --- [RMI TCP Connection(4)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:50:15.158  INFO 51464 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 22:50:15.159  INFO 51464 --- [RMI TCP Connection(4)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 22:50:15.745  INFO 51464 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 22:51:09.141  INFO 44636 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 44636 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 22:51:09.144  INFO 44636 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 22:51:10.223  INFO 44636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 22:51:10.225  INFO 44636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 22:51:10.252  INFO 44636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2022-04-13 22:51:10.661  INFO 44636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 22:51:10.667  INFO 44636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 22:51:10.667  INFO 44636 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 22:51:10.668  INFO 44636 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 22:51:10.668  INFO 44636 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 22:51:10.669  INFO 44636 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 22:51:10.671  INFO 44636 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 22:51:10.825  INFO 44636 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 22:51:10.825  INFO 44636 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1640 ms
+2022-04-13 22:51:17.041  INFO 44636 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 22:51:18.761  INFO 44636 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 22:51:18.762  INFO 44636 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 22:51:18.783  INFO 44636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 22:51:19.248  INFO 44636 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 10.582 seconds (JVM running for 12.462)
+2022-04-13 22:51:19.932  INFO 44636 --- [RMI TCP Connection(2)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:51:19.933  INFO 44636 --- [RMI TCP Connection(2)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:51:19.933  INFO 44636 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 22:51:19.934  INFO 44636 --- [RMI TCP Connection(2)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 22:51:20.291  INFO 44636 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 22:58:34.070  INFO 52744 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 52744 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 22:58:34.072  INFO 52744 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 22:58:35.230  INFO 52744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 22:58:35.231  INFO 52744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 22:58:35.261  INFO 52744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2022-04-13 22:58:35.716  INFO 52744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 22:58:35.723  INFO 52744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 22:58:35.724  INFO 52744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 22:58:35.725  INFO 52744 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 22:58:35.725  INFO 52744 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 22:58:35.725  INFO 52744 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 22:58:35.728  INFO 52744 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 22:58:35.905  INFO 52744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 22:58:35.905  INFO 52744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1790 ms
+2022-04-13 22:58:43.194  INFO 52744 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 22:58:44.998  INFO 52744 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 22:58:44.999  INFO 52744 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 22:58:45.020  INFO 52744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 22:58:45.534  INFO 52744 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 11.992 seconds (JVM running for 13.843)
+2022-04-13 22:58:46.030  INFO 52744 --- [RMI TCP Connection(3)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:58:46.031  INFO 52744 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:58:46.031  INFO 52744 --- [RMI TCP Connection(4)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 22:58:46.032  INFO 52744 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 22:58:46.984  INFO 52744 --- [RMI TCP Connection(4)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

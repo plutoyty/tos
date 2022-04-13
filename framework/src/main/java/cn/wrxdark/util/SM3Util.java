@@ -60,7 +60,7 @@ public class SM2Util {
 
     /**
      * 判断源数据与加密数据是否一致
-     * @param srcStr       输入的字符串
+     * @param srcStr       前端传过来的字符串
      * @param sm3HexString 已经存在缓存或数据库里的字符串
      * @return 校验结果
      * @description  通过验证原数组和生成的hash数组是否为同一数组，验证2者是否为同一数据

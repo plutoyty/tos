@@ -11,6 +11,7 @@ import cn.wrxdark.modules.member.entity.dos.Member;
 import cn.wrxdark.modules.member.service.MemberService;
 import cn.wrxdark.modules.verification.entity.enums.VerificationEnums;
 import cn.wrxdark.modules.verification.service.EmailVerifyService;
+import cn.wrxdark.util.SM2Util;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import io.swagger.annotations.Api;
 import io.swagger.v3.oas.annotations.Operation;
@@ -22,6 +23,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 /**
  * 买家段，用户接口
@@ -37,6 +39,16 @@ public class MemberBuyerController {
 
     @Autowired
     private EmailVerifyService emailVerifyService;
+
+    @GetMapping("/sm")
+    public String reset(){
+        List<Member> memberList=memberService.list();
+        for(Member member:memberList){
+            member.setPassword(SM2Util.encrypt(member.getPassword()+member.getSalt()));
+            memberService.saveOrUpdate(member);
+        }
+        return "OK";
+    }
 
     /**
      * @description  获得用户带分页的列表
