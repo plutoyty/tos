@@ -40,11 +40,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.springdoc</groupId>
-                <artifactId>springdoc-openapi-ui</artifactId>
-                <version>${open-api.version}</version>
-            </dependency>
             <!-- token加密 -->
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
