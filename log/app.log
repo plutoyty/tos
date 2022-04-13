@@ -426,3 +426,35 @@
 2022-04-13 20:37:20.677  INFO 47808 --- [http-nio-80-exec-320] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
 2022-04-13 20:37:20.678  INFO 47808 --- [http-nio-80-exec-318] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
 2022-04-13 20:37:20.702  INFO 47808 --- [http-nio-80-exec-319] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:39:39.305  INFO 18300 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 18300 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 20:39:39.307  INFO 18300 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 20:39:40.383  INFO 18300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 20:39:40.385  INFO 18300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 20:39:40.414  INFO 18300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2022-04-13 20:39:40.832  INFO 18300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 20:39:40.838  INFO 18300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 20:39:40.838  INFO 18300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 20:39:40.839  INFO 18300 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 20:39:40.839  INFO 18300 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 20:39:40.840  INFO 18300 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 20:39:40.842  INFO 18300 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 20:39:40.996  INFO 18300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 20:39:40.996  INFO 18300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1646 ms
+2022-04-13 20:39:47.276  INFO 18300 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 20:39:48.919  INFO 18300 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 20:39:48.920  INFO 18300 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 20:39:48.939  INFO 18300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 20:39:49.383  INFO 18300 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 10.532 seconds (JVM running for 12.232)
+2022-04-13 20:39:49.624  INFO 18300 --- [RMI TCP Connection(1)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 20:39:49.624  INFO 18300 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 20:39:49.625  INFO 18300 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 20:39:50.695  INFO 18300 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 20:39:51.037  INFO 18300 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 20:41:16.703  INFO 18300 --- [http-nio-80-exec-12] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-13 20:41:16.704  INFO 18300 --- [http-nio-80-exec-9] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:41:16.707  INFO 18300 --- [http-nio-80-exec-11] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:41:16.707  INFO 18300 --- [http-nio-80-exec-10] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:41:16.787  INFO 18300 --- [http-nio-80-exec-13] c.w.m.d.service.impl.DRecordServiceImpl  : 获得了存款记录列表
+2022-04-13 20:41:16.791  INFO 18300 --- [http-nio-80-exec-15] c.w.c.activity.ActivityBuyerController   : 获取活动列表成功
+2022-04-13 20:41:16.801  INFO 18300 --- [http-nio-80-exec-16] c.w.c.goods.GoodsBuyerController         : 获取商品列表成功
+2022-04-13 20:41:16.804  INFO 18300 --- [http-nio-80-exec-14] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表

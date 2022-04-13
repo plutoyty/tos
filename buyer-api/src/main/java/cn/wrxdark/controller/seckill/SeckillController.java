@@ -64,6 +64,23 @@ public class SeckillController {
     }
 
     /**
+     * 用于测试的直接秒杀接口
+     * @param memberId 用户id
+     * @param activityId 活动id
+     * @param goodsId 商品id
+     * @return
+     */
+    @PostMapping("/seckill-for-test/{memberId}/{activityId}/{goodsId}")
+    public ResultMessage checkSeckillTempPath(
+            @NotNull(message = "请求参数不足") @PathVariable("memberId") String memberId,
+            @NotNull(message = "请求参数不足") @PathVariable("activityId") String activityId,
+            @NotNull(message = "请求参数不足") @PathVariable("goodsId") String goodsId
+    ){
+        seckillService.pay(memberId,activityId,goodsId);
+        return ResultUtil.success();
+    }
+
+    /**
      * @description 弃用 数学公式验证码
      * @author 刘宇阳
      * @param memberId
