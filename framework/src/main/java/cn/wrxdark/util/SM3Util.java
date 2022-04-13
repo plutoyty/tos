@@ -13,7 +13,7 @@ import java.util.Arrays;
  * @description 国密算法，类似于MD5
  * @create 2022/4/12
  */
-public class SM2Util {
+public class SM3Util {
     private static final String ENCODING = "UTF-8";
 
     static {

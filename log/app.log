@@ -1756,3 +1756,155 @@ cn.wrxdark.common.exception.ServiceException: null
 2022-04-13 22:58:46.031  INFO 52744 --- [RMI TCP Connection(4)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2022-04-13 22:58:46.032  INFO 52744 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2022-04-13 22:58:46.984  INFO 52744 --- [RMI TCP Connection(4)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 23:34:40.556  INFO 42836 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 42836 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-13 23:34:40.558  INFO 42836 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-13 23:34:41.629  INFO 42836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 23:34:41.631  INFO 42836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-13 23:34:41.659  INFO 42836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2022-04-13 23:34:42.064  INFO 42836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-13 23:34:42.070  INFO 42836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 23:34:42.070  INFO 42836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-13 23:34:42.071  INFO 42836 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-13 23:34:42.072  INFO 42836 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-13 23:34:42.072  INFO 42836 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-13 23:34:42.074  INFO 42836 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-13 23:34:42.226  INFO 42836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 23:34:42.227  INFO 42836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1624 ms
+2022-04-13 23:34:48.445  INFO 42836 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-13 23:34:50.068  INFO 42836 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-13 23:34:50.069  INFO 42836 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-13 23:34:50.087  INFO 42836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-13 23:34:50.532  INFO 42836 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 10.482 seconds (JVM running for 12.595)
+2022-04-13 23:34:51.447  INFO 42836 --- [RMI TCP Connection(1)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 23:34:51.447  INFO 42836 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 23:34:51.449  INFO 42836 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 23:34:51.450  INFO 42836 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-04-13 23:34:52.526  INFO 42836 --- [RMI TCP Connection(2)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 23:35:07.402 ERROR 42836 --- [http-nio-80-exec-1] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[RuntimeException]:
+
+org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Unrecognized token 'package': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (byte[])"package rules;
+
+import cn.wrxdark.modules.member.entity.dos.Member;
+import cn.wrxdark.modules.rule.entity.dos.CheckResult;
+import lombok.extern.slf4j.Slf4j;
+import cn.wrxdark.common.exception.ServiceException;
+import cn.wrxdark.common.entity.enums.ResultCode;
+global org.slf4j.Logger logger rule "rule4"
+dialect "mvel"
+    when
+$result:CheckResult()        $member:Member(age >= 18 && workCondition == 1 && dishonest == 0)
+    then
+        $result.check = true
+        logger.info("符合条件");
+  "[truncated 5 bytes]; line: 1, column: 9]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'package': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (byte[])"package rules;
+
+import cn.wrxdark.modules.member.entity.dos.Member;
+import cn.wrxdark.modules.rule.entity.dos.CheckResult;
+import lombok.extern.slf4j.Slf4j;
+import cn.wrxdark.common.exception.ServiceException;
+import cn.wrxdark.common.entity.enums.ResultCode;
+global org.slf4j.Logger logger rule "rule4"
+dialect "mvel"
+    when
+$result:CheckResult()        $member:Member(age >= 18 && workCondition == 1 && dishonest == 0)
+    then
+        $result.check = true
+        logger.info("符合条件");
+  "[truncated 5 bytes]; line: 1, column: 9]
+	at org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer.deserialize(Jackson2JsonRedisSerializer.java:75)
+	at org.springframework.data.redis.core.AbstractOperations.deserializeValue(AbstractOperations.java:335)
+	at org.springframework.data.redis.core.AbstractOperations$ValueDeserializingRedisCallback.doInRedis(AbstractOperations.java:61)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:222)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:189)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:53)
+	at cn.wrxdark.cache.impl.RedisCache.get(RedisCache.java:32)
+	at cn.wrxdark.controller.member.MemberBuyerController.reset(MemberBuyerController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'package': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (byte[])"package rules;
+
+import cn.wrxdark.modules.member.entity.dos.Member;
+import cn.wrxdark.modules.rule.entity.dos.CheckResult;
+import lombok.extern.slf4j.Slf4j;
+import cn.wrxdark.common.exception.ServiceException;
+import cn.wrxdark.common.entity.enums.ResultCode;
+global org.slf4j.Logger logger rule "rule4"
+dialect "mvel"
+    when
+$result:CheckResult()        $member:Member(age >= 18 && workCondition == 1 && dishonest == 0)
+    then
+        $result.check = true
+        logger.info("符合条件");
+  "[truncated 5 bytes]; line: 1, column: 9]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1851)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:717)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3588)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2683)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:865)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:757)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4664)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4513)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3572)
+	at org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer.deserialize(Jackson2JsonRedisSerializer.java:73)
+	... 66 common frames omitted
+

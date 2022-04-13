@@ -1,24 +1,22 @@
 package cn.wrxdark.controller.member;
 
 
+import cn.wrxdark.cache.Cache;
 import cn.wrxdark.common.entity.enums.ResultCode;
 import cn.wrxdark.common.entity.enums.ResultUtil;
 import cn.wrxdark.common.entity.vo.ResultMessage;
 import cn.wrxdark.common.exception.ServiceException;
 import cn.wrxdark.common.security.token.Token;
-import cn.wrxdark.modules.goods.entity.dos.Goods;
 import cn.wrxdark.modules.member.entity.dos.Member;
 import cn.wrxdark.modules.member.service.MemberService;
 import cn.wrxdark.modules.verification.entity.enums.VerificationEnums;
 import cn.wrxdark.modules.verification.service.EmailVerifyService;
-import cn.wrxdark.util.SM2Util;
+import cn.wrxdark.util.SM3Util;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import io.swagger.annotations.Api;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import lombok.extern.slf4j.Slf4j;
-import io.swagger.v3.oas.annotations.Parameters;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -39,16 +37,6 @@ public class MemberBuyerController {
 
     @Autowired
     private EmailVerifyService emailVerifyService;
-
-    @GetMapping("/sm")
-    public String reset(){
-        List<Member> memberList=memberService.list();
-        for(Member member:memberList){
-            member.setPassword(SM2Util.encrypt(member.getPassword()+member.getSalt()));
-            memberService.saveOrUpdate(member);
-        }
-        return "OK";
-    }
 
     /**
      * @description  获得用户带分页的列表

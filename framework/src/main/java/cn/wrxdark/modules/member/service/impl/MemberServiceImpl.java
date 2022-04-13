@@ -1,21 +1,17 @@
 package cn.wrxdark.modules.member.service.impl;
 
 import cn.wrxdark.common.entity.enums.ResultCode;
-import cn.wrxdark.common.entity.enums.ResultUtil;
-import cn.wrxdark.common.entity.vo.ResultMessage;
 import cn.wrxdark.common.exception.ServiceException;
 import cn.wrxdark.common.security.AuthUser;
 import cn.wrxdark.common.security.context.UserContext;
 import cn.wrxdark.common.security.token.MemberTokenGenerate;
 import cn.wrxdark.common.security.token.Token;
-import cn.wrxdark.modules.goods.entity.dos.Goods;
 import cn.wrxdark.modules.member.entity.dos.Member;
 import cn.wrxdark.modules.member.mapper.MemberMapper;
 import cn.wrxdark.modules.member.service.MemberService;
 
-import cn.wrxdark.util.SM2Util;
+import cn.wrxdark.util.SM3Util;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -25,7 +21,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
-import java.util.Objects;
 import java.util.UUID;
 
 @Repository
@@ -50,7 +45,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         if (member == null) {
             throw new ServiceException(ResultCode.USER_EMAIL_NOT_EXIST);
         }
-        if (!SM2Util.verify(password+member.getSalt(),member.getPassword())) {
+        if (!SM3Util.verify(password+member.getSalt(),member.getPassword())) {
             throw new ServiceException(ResultCode.USER_PASSWORD_ERROR);
         }
         //创建一个token
@@ -68,7 +63,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         member = new Member();
         member.setEmail(email);
         member.setSalt(getSalt());
-        member.setPassword(SM2Util.encrypt(password+member.getSalt()));
+        member.setPassword(SM3Util.encrypt(password+member.getSalt()));
         member.setName(UUID.randomUUID().toString());
         memberMapper.insert(member);
         return memberTokenGenerate.createToken(member, false);
@@ -81,11 +76,11 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
             throw new ServiceException(ResultCode.USER_EMAIL_NOT_EXIST);
         }
         //判断旧密码是否正确
-        if (!SM2Util.verify(password+member.getSalt(),member.getPassword())) {
+        if (!SM3Util.verify(password+member.getSalt(),member.getPassword())) {
             throw new ServiceException(ResultCode.USER_OLD_PASSWORD_ERROR);
         }
         //修改密码
-        newPassword=SM2Util.encrypt(newPassword+member.getSalt());
+        newPassword= SM3Util.encrypt(newPassword+member.getSalt());
         member.setPassword(newPassword);
         memberMapper.updatePassword(email, newPassword);
         return this.login(member.getEmail(),member.getPassword());
@@ -122,7 +117,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         if (member == null) {
             throw new ServiceException(ResultCode.USER_EMAIL_NOT_EXIST);
         }
-        password=SM2Util.encrypt(password+member.getSalt());
+        password= SM3Util.encrypt(password+member.getSalt());
         member.setPassword(password);
         memberMapper.updatePassword(email,password);
         return memberTokenGenerate.createToken(member, false);
