@@ -6,6 +6,7 @@ import cn.wrxdark.common.exception.ServiceException;
 import cn.wrxdark.modules.verification.entity.enums.VerificationEnums;
 import cn.wrxdark.modules.verification.service.EmailVerifyService;
 import cn.wrxdark.util.RedisKeyUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -15,6 +16,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 @Service
+@Slf4j
 public class EmailVerifyServiceImpl implements EmailVerifyService {
 
     @Autowired
@@ -40,6 +42,7 @@ public class EmailVerifyServiceImpl implements EmailVerifyService {
         }
         if (val.equals(code)) {
             cache.remove(key);
+            log.info("邮箱验证成功");
             return true;
         }
         return false;
@@ -56,5 +59,6 @@ public class EmailVerifyServiceImpl implements EmailVerifyService {
         message.setText(context);
         message.setSubject(subject);
         javaMailSender.send(message);
+        log.info("发送邮件成功");
     }
 }
