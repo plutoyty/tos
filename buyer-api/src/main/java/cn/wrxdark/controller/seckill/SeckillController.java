@@ -1,5 +1,6 @@
 package cn.wrxdark.controller.seckill;
 
+import cn.wrxdark.cache.Cache;
 import cn.wrxdark.common.entity.enums.ResultUtil;
 import cn.wrxdark.common.entity.vo.ResultMessage;
 import cn.wrxdark.common.security.annotations.AccessLimit;
@@ -62,7 +63,7 @@ public class SeckillController {
         seckillService.check(memberId,goodsId,activityId,path);
         //没抛异常，说明成功，开始支付流程
         log.info("路径正确");
-        seckillService.pay(memberId,activityId,goodsId);
+        seckillService.pay(memberId,goodsId,activityId);
         return ResultUtil.success();
     }
 
@@ -79,7 +80,7 @@ public class SeckillController {
             @NotNull(message = "请求参数不足") @PathVariable("activityId") String activityId,
             @NotNull(message = "请求参数不足") @PathVariable("goodsId") String goodsId
     ){
-        seckillService.pay(memberId,activityId,goodsId);
+        seckillService.pay(memberId,goodsId,activityId);
         return ResultUtil.success();
     }
 

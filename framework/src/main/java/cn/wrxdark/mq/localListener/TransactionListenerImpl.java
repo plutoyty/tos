@@ -49,8 +49,6 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
      */
     @Override
     public RocketMQLocalTransactionState executeLocalTransaction(Message msg, Object arg) {
-        System.out.println(msg);
-        System.out.println(arg);
         try{
             ProducerArg producerArg= (ProducerArg) arg;
             String goodsId= producerArg.getGoodsId();
@@ -58,16 +56,20 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
             String activityId= producerArg.getActivityId();
             String stockLogId=producerArg.getStockLogId();
             //扣减redis中的库存
+            log.info("开始扣减了");
             decrStock(goodsId,activityId);
             log.info("扣减redis中的库存");
             //扣减用户余额
-            String goodsKey= RedisKeyUtil.generateGoodsKey(goodsId);
+            String goodsKey= RedisKeyUtil.generateGoodsKey(goodsId,activityId);
             double goodsPrice= (double) cache.getHash(goodsKey,"initialDeposit");
             memberMapper.decrBalance(memberId,goodsPrice);
             log.info("扣减了用户余额");
             //在redis中存下用户已购买的记录
             String haveBoughtKey=RedisKeyUtil.generateHaveBoughtKey(memberId,goodsId,activityId);
             String activityKey=RedisKeyUtil.generateActivityKey(activityId);
+            System.out.println(activityKey);
+            System.out.println(cache.getHash(goodsKey));
+            System.out.println(cache.getHash(activityKey));
             LocalDateTime endTime= (LocalDateTime) cache.getHash(activityKey,"endTime");
             Duration duration= Duration.between(LocalDateTime.now(),endTime );
             //活动结束即超时删除
@@ -96,11 +98,11 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
     @SneakyThrows
     @Override
     public RocketMQLocalTransactionState checkLocalTransaction(Message msg) {
-        log.info("============== 查询流水记录{}的状态==========",msg);
+//        log.info("============== 查询流水记录{}的状态==========",msg);
         String json = new String((byte[]) msg.getPayload());
         JSONObject jsonObject = JSON.parseObject(json);
         String stockLogId = jsonObject.getString("stockLogId");
-        log.info("回查的流水记录id为{}",stockLogId);
+//        log.info("回查的流水记录id为{}",stockLogId);
         StockLog stockLogInSql = stockLogMapper.selectById(stockLogId);
         if(stockLogInSql.getStatus().equals(StatusEnum.STOCK_LOG_INIT.statusCode())){
             //没有处理该流水，未知状态
@@ -120,14 +122,20 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
      * @return
      */
     private synchronized boolean decrStock(String goodsId,String activityId) {
-        String key= RedisKeyUtil.generateStockKey(goodsId,activityId);
-        int restStock= (int) cache.get(key);
-        //库存不足
-        if(restStock==0){
+        try {
+            String key= RedisKeyUtil.generateStockKey(goodsId,activityId);
+            int restStock= (int) cache.get(key);
+            //库存不足
+            if(restStock==0){
+                return false;
+            }
+            //扣减缓存中的库存
+            cache.decrData(key,1);
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
             return false;
         }
-        //扣减缓存中的库存
-        cache.decrData(key,1);
-        return true;
+
     }
 }

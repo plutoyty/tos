@@ -59,7 +59,6 @@ public class ActivityBuyerController {
         return ResultUtil.data(activity);
     }
 
-
     /**
      * @description 获得商品的分页列表
      * @author 刘宇阳

@@ -87,7 +87,7 @@ public class SeckillServiceImpl implements SeckillService {
             throw new ServiceException(ResultCode.ACTIVITY_NOT_START);
         }
         //4、商品是否是秒杀商品
-        String goodsKey=RedisKeyUtil.generateGoodsKey(goodsId);
+        String goodsKey=RedisKeyUtil.generateGoodsKey(goodsId,activityId);
         if(cache.get(goodsKey)==null){
             //商品不存在
             throw new ServiceException(ResultCode.ACTIVITY_NOT_EXIST);
@@ -121,7 +121,7 @@ public class SeckillServiceImpl implements SeckillService {
         //用户是否有钱去买产品
         Member member = memberMapper.selectById(memberId);
         double memberBalance=member.getBalance();
-        String goodsKey= RedisKeyUtil.generateGoodsKey(goodsId);
+        String goodsKey= RedisKeyUtil.generateGoodsKey(goodsId,activityId);
         double goodsPrice= (double) cache.getHash(goodsKey,"initialDeposit");
         res=memberBalance>=goodsPrice;
         if(!res){

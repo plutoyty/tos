@@ -60,7 +60,6 @@ public class ActivityServiceImpl extends ServiceImpl<ActivityMapper,Activity>  i
         Activity activity=new Activity(activityRuleDTO);
         //查询参与活动的商品
         Goods goods=goodsMapper.selectById(activity.getGoodsId());
-        System.out.println(activity);
         if(goods==null){
             throw new ServiceException(ResultCode.GOODS_ERROR);
         }
@@ -94,7 +93,7 @@ public class ActivityServiceImpl extends ServiceImpl<ActivityMapper,Activity>  i
         log.info("成功预热活动"+activity);
         //redis插入商品
         beanMap= BeanUtil.beanToMap(goods);
-        key=RedisKeyUtil.generateGoodsKey(goods.getId());
+        key=RedisKeyUtil.generateGoodsKey(goods.getId(),activity.getId());
         cache.putAllHash(key,beanMap);
         cache.expire(key,duration.getSeconds(), TimeUnit.SECONDS);
         log.info("成功预热商品"+goods);

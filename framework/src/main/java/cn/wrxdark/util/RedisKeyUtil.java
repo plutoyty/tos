@@ -54,13 +54,13 @@ public class RedisKeyUtil {
     }
 
     /**
-     * @description 生成商品的key
+     * @description 生成活动商品的key
      * @author 刘宇阳
      * @param goodsId
      * @return
      */
-    public static String generateGoodsKey(String goodsId){
-        return CachePrefix.GOODS.getPrefix()+"-"+goodsId;
+    public static String generateGoodsKey(String goodsId,String activityId){
+        return CachePrefix.GOODS.getPrefix()+"-"+activityId+"-"+goodsId;
     }
 
     /**
