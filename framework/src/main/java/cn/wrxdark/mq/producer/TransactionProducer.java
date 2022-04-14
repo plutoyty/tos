@@ -1,6 +1,7 @@
 package cn.wrxdark.mq.producer;
 
-import cn.wrxdark.mq.entity.MQMessage;
+import cn.wrxdark.mq.entity.ConsumerArg;
+import cn.wrxdark.mq.entity.ProducerArg;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.client.producer.SendStatus;
 import org.apache.rocketmq.client.producer.TransactionSendResult;
@@ -28,9 +29,9 @@ public class TransactionProducer {
      * @author 刘宇阳
      * @return
      */
-    public boolean produce(Message<MQMessage> message, HashMap<String,Object> argsMap) {
+    public boolean produce(Message<ConsumerArg> message, ProducerArg arg) {
         log.info("========发送消息中=========");
-        TransactionSendResult sendResult = rocketMQTemplate.sendMessageInTransaction("seckill", message, argsMap);
+        TransactionSendResult sendResult = rocketMQTemplate.sendMessageInTransaction("seckill", message, arg);
         log.info("========发送完成=========");
         return sendResult.getSendStatus().equals(SendStatus.SEND_OK);
     }

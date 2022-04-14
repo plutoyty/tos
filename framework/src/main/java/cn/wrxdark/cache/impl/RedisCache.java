@@ -28,7 +28,6 @@ public class RedisCache implements Cache {
 
     @Override
     public Object get(Object key) {
-
         return redisTemplate.opsForValue().get(key);
     }
 

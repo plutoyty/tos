@@ -4,9 +4,12 @@ package cn.wrxdark.controller.activity;
 import cn.wrxdark.common.entity.enums.ResultUtil;
 import cn.wrxdark.common.entity.vo.ResultMessage;
 import cn.wrxdark.modules.activity.entity.dos.Activity;
+import cn.wrxdark.modules.activity.entity.dto.ActivityRuleDTO;
 import cn.wrxdark.modules.activity.service.ActivityService;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/buyer/activity")
-@Api(tags = "买家端，活动接口")
+@Api(tags = "活动接口")
 @Slf4j
 public class ActivityBuyerController {
     @Autowired
@@ -24,25 +27,35 @@ public class ActivityBuyerController {
 
     /**
      * 添加活动
-     * @param activity 活动对象
+     * @param activityRuleDTO 活动+规则
      * @return
      * @throws IllegalAccessException
      */
+    @Operation(summary="添加活动")
     @PostMapping
-    public ResultMessage add(@RequestBody Activity activity) throws IllegalAccessException {
-        activityService.add(activity);
+    public ResultMessage add(@RequestBody ActivityRuleDTO activityRuleDTO) throws IllegalAccessException {
+        activityService.add(activityRuleDTO);
         return ResultUtil.success();
     }
 
+    @Operation(summary="删除活动")
     @DeleteMapping("{activityId}")
     public ResultMessage del(@PathVariable String activityId){
         activityService.delById(activityId);
         return ResultUtil.success();
     }
 
+    @Operation(summary = "根据活动id获取活动")
     @GetMapping("{activityId}")
     public ResultMessage<Activity> get(@PathVariable String activityId){
         Activity activity = activityService.get(activityId);
+        return ResultUtil.data(activity);
+    }
+
+    @Operation(summary = "获取最新的活动")
+    @GetMapping("/latest")
+    public ResultMessage<Activity> getLatestActivity(){
+        Activity activity = activityService.getLatestActivity();
         return ResultUtil.data(activity);
     }
 
@@ -54,6 +67,7 @@ public class ActivityBuyerController {
      * @param pageSize 每页大小
      * @return
      */
+    @Operation(summary="获得活动的分页列表")
     @GetMapping("/list")
     public ResultMessage<IPage<Activity>> getList(
             @RequestParam("pageNum") Integer pageNum,
@@ -70,6 +84,7 @@ public class ActivityBuyerController {
      * @param activityId 活动id
      * @return
      */
+    @Operation(summary="开启活动")
     @PutMapping("/start/{activityId}")
     public ResultMessage startActivity(
             @PathVariable("activityId")  String activityId
@@ -84,6 +99,7 @@ public class ActivityBuyerController {
      * @param activityId 活动id
      * @return
      */
+    @Operation(summary = "停止活动")
     @PutMapping("/stop/{activityId}")
     public ResultMessage stopActivity(
             @PathVariable("activityId")  String activityId

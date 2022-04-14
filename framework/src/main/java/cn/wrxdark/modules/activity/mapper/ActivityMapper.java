@@ -3,8 +3,10 @@ package cn.wrxdark.modules.activity.mapper;
 import cn.wrxdark.modules.activity.entity.dos.Activity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 /**
  *
@@ -39,4 +41,7 @@ public interface ActivityMapper extends BaseMapper<Activity> {
      */
     @Update("UPDATE tos_activity SET status=1 WHERE id=#{activityId}")
     void updateToStart(String activityId);
+
+    @Select("SELECT * FROM tos_activity ORDER BY start_time LIMIT 0,1")
+    Activity selectLatestOne();
 }

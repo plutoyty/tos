@@ -17,9 +17,9 @@ public class MPGenerator {
     public static void main(String[] args) {
         List<String> tables = new ArrayList<>();
         //设置表名
-        tables.add("stock_log");
+        tables.add("tos_rule");
         //配置模板
-        FastAutoGenerator.create("jdbc:mysql://101.33.228.113:3306/miaosha?characterEncoding=utf8","root","root")
+        FastAutoGenerator.create("jdbc:mysql://101.33.228.113:3306/miaosha?characterEncoding=utf8","root","tqyyds")
                 .globalConfig(builder -> {
                     builder.author("刘宇阳")//作者
                             //输出目录，这里的tmp和最外面的README.md是同级的，放心测试

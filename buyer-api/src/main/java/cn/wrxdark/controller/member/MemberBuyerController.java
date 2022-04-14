@@ -28,7 +28,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/buyer/member")
-@Api(tags = "买家端，用户接口")
+@Api(tags = "用户接口")
 @Slf4j
 public class MemberBuyerController {
 
@@ -45,6 +45,7 @@ public class MemberBuyerController {
      * @param pageSize 每页大小
      * @return
      */
+    @Operation(summary = "获得用户带分页的列表")
     @GetMapping("/list")
     public ResultMessage<IPage<Member>> getList(
             @RequestParam("pageNum") Integer pageNum,
@@ -109,7 +110,6 @@ public class MemberBuyerController {
      * @param code  验证码
      */
     @PostMapping("/email-login")
-
     @Operation(summary = "邮箱验证码登录")
     public ResultMessage<Token> emailLogin(@NotNull(message = "邮箱为空") @RequestParam @Parameter(description = "邮箱") String email,
                                            @NotNull(message = "验证码为空") @RequestParam @Parameter(description = "验证码") String code,

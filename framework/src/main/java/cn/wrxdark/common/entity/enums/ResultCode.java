@@ -108,6 +108,7 @@ public enum ResultCode {
     ACTIVITY_START(32004,"活动已开启"),
     ACTIVITY_STOP(32005,"活动已停止"),
     ACTIVITY_QUALIFICATION_ERROR(32006,"没有参与秒杀活动的资格"),
+    ACTIVITY_DURATION_ERROR(32007,"活动结束时间不能早于开始时间"),
 
 
     /**

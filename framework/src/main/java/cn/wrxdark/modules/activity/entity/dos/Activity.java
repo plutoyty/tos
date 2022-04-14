@@ -1,6 +1,7 @@
 package cn.wrxdark.modules.activity.entity.dos;
 
 import cn.wrxdark.common.entity.dos.BaseDo;
+import cn.wrxdark.modules.activity.entity.dto.ActivityRuleDTO;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
@@ -11,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
@@ -22,6 +24,7 @@ import lombok.ToString;
 @ToString(callSuper = true)
 @TableName("tos_activity")
 @ApiModel(value = "活动对象", description = "活动表")
+@NoArgsConstructor
 public class Activity extends BaseDo implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -35,7 +38,7 @@ public class Activity extends BaseDo implements Serializable {
     @TableField("`name`")
     private String name;
 
-//    @ApiModelProperty("封面图片地址")
+    @ApiModelProperty("封面图片地址")
     @TableField("cover_image")
     @JsonProperty("cover_image")
     private String coverImage;
@@ -48,7 +51,7 @@ public class Activity extends BaseDo implements Serializable {
     @TableField("stock")
     private Integer stock;
 
-//    @ApiModelProperty("活动产品数量剩余")
+    @ApiModelProperty("活动产品数量剩余")
     @TableField("rest_stock")
     @JsonProperty("rest_stock")
     private Integer restStock;
@@ -65,12 +68,22 @@ public class Activity extends BaseDo implements Serializable {
     @JsonFormat(shape= JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime endTime;
 
-//    @ApiModelProperty("状态 1开始 0结束")
+    @ApiModelProperty("状态 1开始 0结束")
     @TableField("status")
     private Integer status;
 
-//    @ApiModelProperty("乐观锁")
+    @ApiModelProperty("乐观锁")
     @TableField("version")
     private Integer version;
 
+    public Activity(ActivityRuleDTO activityRuleDTO) {
+        this.goodsId=activityRuleDTO.getGoodsId();
+        this.name=activityRuleDTO.getName();
+        this.coverImage=activityRuleDTO.getCoverImage();
+        this.describe=activityRuleDTO.getDescribe();
+        this.stock=activityRuleDTO.getStock();
+        this.restStock=activityRuleDTO.getStock();
+        this.startTime=activityRuleDTO.getStartTime();
+        this.endTime=activityRuleDTO.getEndTime();
+    }
 }

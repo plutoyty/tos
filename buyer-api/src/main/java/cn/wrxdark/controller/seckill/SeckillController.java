@@ -5,6 +5,7 @@ import cn.wrxdark.common.entity.vo.ResultMessage;
 import cn.wrxdark.common.security.annotations.AccessLimit;
 import cn.wrxdark.modules.seckill.SeckillService;
 import io.swagger.annotations.Api;
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -25,10 +26,11 @@ public class SeckillController {
     private SeckillService seckillService;
 
     /**
-     * @description 创建临时秒杀地址，内部含资格检测
+     * @description 创建临时秒杀地址，内部含一些校验
      * @author 刘宇阳
      * @create 2022/4/12 10:08
      */
+    @Operation(summary = "创建临时秒杀地址，内部含一些校验")
     @PostMapping("/path/{memberId}/{activityId}/{goodsId}")
     @AccessLimit(seconds = 5, maxCount = 5, needLogin = false)
     public ResultMessage<String> getSeckillTempPath(
@@ -41,7 +43,7 @@ public class SeckillController {
     }
 
     /**
-     * @description 检查临时路径是否有问题
+     * @description 检查临时路径是否有问题，没问题就支付
      * @author 刘宇阳
      * @param memberId 用户id
      * @param activityId 活动id
@@ -49,6 +51,7 @@ public class SeckillController {
      * @param path 临时的秒杀路径
      * @return
      */
+    @Operation(summary = "检查临时路径是否有问题，没问题就支付")
     @PostMapping("/check-and-kill/{memberId}/{activityId}/{goodsId}/{path}")
     public ResultMessage checkSeckillTempPath(
             @NotNull(message = "请求参数不足") @PathVariable("memberId") String memberId,

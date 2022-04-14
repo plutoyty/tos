@@ -2,6 +2,7 @@ package cn.wrxdark.modules.activity.service;
 
 import cn.wrxdark.common.entity.vo.ResultMessage;
 import cn.wrxdark.modules.activity.entity.dos.Activity;
+import cn.wrxdark.modules.activity.entity.dto.ActivityRuleDTO;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -15,10 +16,10 @@ public interface ActivityService extends IService<Activity> {
     /**
      * @description  添加活动，预热商品、活动、库存
      * @author 刘宇阳
-     * @param activity 活动对象
+     * @param activityRuleDTO 活动+规则对象
      * @throws IllegalAccessException
      */
-    void add(Activity activity) throws IllegalAccessException;
+    void add(ActivityRuleDTO activityRuleDTO) throws IllegalAccessException;
 
     Activity get(String activityId);
 
@@ -46,4 +47,6 @@ public interface ActivityService extends IService<Activity> {
      * @return
      */
     IPage<Activity> listPage(Integer pageNum, Integer pageSize);
+
+    Activity getLatestActivity();
 }

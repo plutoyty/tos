@@ -7,13 +7,12 @@ import cn.wrxdark.common.entity.enums.ResultUtil;
 import cn.wrxdark.common.entity.enums.StatusEnum;
 import cn.wrxdark.common.entity.vo.ResultMessage;
 import cn.wrxdark.common.exception.ServiceException;
-import cn.wrxdark.modules.depositRecord.entity.dos.DepositRecord;
-import cn.wrxdark.modules.member.entity.dos.Member;
 import cn.wrxdark.modules.member.mapper.MemberMapper;
 import cn.wrxdark.modules.seckill.SeckillService;
 import cn.wrxdark.modules.stockLog.entity.dos.StockLog;
 import cn.wrxdark.modules.stockLog.mapper.StockLogMapper;
-import cn.wrxdark.mq.entity.MQMessage;
+import cn.wrxdark.mq.entity.ConsumerArg;
+import cn.wrxdark.mq.entity.ProducerArg;
 import cn.wrxdark.mq.producer.TransactionProducer;
 import cn.wrxdark.util.Base64Util;
 import cn.wrxdark.util.RedisKeyUtil;
@@ -27,8 +26,8 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.Random;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
@@ -129,68 +128,19 @@ public class SeckillServiceImpl implements SeckillService {
      */
     @Override
     public void pay(String memberId, String goodsId, String activityId) {
-        //用户是否有钱去买产品
-        String goodsKey=RedisKeyUtil.generateGoodsKey(goodsId);
-        Member member = memberMapper.selectById(memberId);
-        double memberBalance=member.getBalance();
-        double goodsPrice= (double) cache.getHash(goodsKey,"initialDeposit");
-        if(memberBalance<goodsPrice){
-            //用户余额不足
-            throw new ServiceException(ResultCode.USER_BALANCE_ERROR);
-        }
-        //试图扣减redis中的库存
-        boolean res=decrStock(goodsId,activityId);
-        //库存不足
-        if(!res){
-            throw new ServiceException(ResultCode.GOODS_SKU_QUANTITY_NOT_ENOUGH);
-        }
-        //扣减用户余额
-        memberMapper.decrBalance(memberId,goodsPrice);
-        log.info("扣减了用户余额");
-        //生成库存流水记录，防止网络问题导致的消息不一致
+        log.info("生成库存流水");
         StockLog stockLog=new StockLog(goodsId,activityId,1, StatusEnum.STOCK_LOG_INIT.statusCode());
         stockLogMapper.insert(stockLog);
-        log.info("生成库存流水");
-        //生成要发送的消息
-        DepositRecord dr=new DepositRecord(UUID.randomUUID().toString(),memberId,goodsId,activityId,goodsPrice,1);
-        MQMessage payload=new MQMessage(stockLog.getId(),dr);
-        Message<MQMessage> message = MessageBuilder.withPayload(payload).build();
+        ProducerArg producerArg=new ProducerArg(stockLog.getId(),memberId,goodsId,activityId);
+        ConsumerArg payload=new ConsumerArg(goodsId,activityId,stockLog.getId());
+        Message<ConsumerArg> message = MessageBuilder.withPayload(payload).build();
         //发送事务消息
-        boolean sendSuccess=producer.produce(message,null);
+        boolean sendSuccess=producer.produce(message,producerArg);
         log.info("发送事务型消息");
         if(!sendSuccess){
-            //TODO 会发送不成功吗?
+            throw new ServiceException(ResultCode.CREATE_ORDER_ERROR);
         }
-        //存下用户已购买的记录
-        String haveBoughtKey=RedisKeyUtil.generateHaveBoughtKey(memberId,goodsId,activityId);
-        String activityKey=RedisKeyUtil.generateActivityKey(activityId);
-        LocalDateTime endTime= (LocalDateTime) cache.getHash(activityKey,"endTime");
-        Duration duration= Duration.between(LocalDateTime.now(),endTime );
-        //活动结束即超时删除
-        long expireSeconds=duration.getSeconds();
-        log.info("保存用户已经购买过");
-        cache.put(haveBoughtKey,"",expireSeconds,TimeUnit.SECONDS);
     }
-
-    /**
-     * @description 查询以及扣减库存，同步锁保证线程安全
-     * @param goodsId 商品id
-     * @param activityId 活动id
-     * @return
-     */
-    private synchronized boolean decrStock(String goodsId,String activityId) {
-        String key= RedisKeyUtil.generateStockKey(goodsId,activityId);
-        int restStock= (int) cache.get(key);
-        //库存不足
-        if(restStock==0){
-            return false;
-        }
-        //扣减缓存中的库存
-        cache.decrData(key,1);
-        return true;
-    }
-
-
 //    ------------------------------验证码部分，已废弃------------------------------------------------------
 
     /**

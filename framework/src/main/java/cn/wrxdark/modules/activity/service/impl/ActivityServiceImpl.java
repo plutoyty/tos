@@ -8,10 +8,13 @@ import cn.wrxdark.common.entity.enums.ResultUtil;
 import cn.wrxdark.common.entity.vo.ResultMessage;
 import cn.wrxdark.common.exception.ServiceException;
 import cn.wrxdark.modules.activity.entity.dos.Activity;
+import cn.wrxdark.modules.activity.entity.dto.ActivityRuleDTO;
 import cn.wrxdark.modules.activity.mapper.ActivityMapper;
 import cn.wrxdark.modules.activity.service.ActivityService;
 import cn.wrxdark.modules.goods.entity.dos.Goods;
 import cn.wrxdark.modules.goods.mapper.GoodsMapper;
+import cn.wrxdark.modules.rule.mapper.RuleMapper;
+import cn.wrxdark.modules.rule.mapper.entity.dos.Rule;
 import cn.wrxdark.util.BeanUtil;
 import cn.wrxdark.util.RedisKeyUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -42,19 +45,22 @@ public class ActivityServiceImpl extends ServiceImpl<ActivityMapper,Activity>  i
     private ActivityMapper activityMapper;
     @Autowired
     private GoodsMapper goodsMapper;
+    @Autowired
+    private RuleMapper ruleMapper;
 
     /**
      * @description  添加活动，预热商品、活动、库存
      * @author 刘宇阳
-     * @param activity 活动对象
+     * @param activityRuleDTO 活动+规则对象
      * @throws IllegalAccessException
      */
     @Override
     @Transactional
-    public void add(Activity activity) throws IllegalAccessException {
-        activity.setRestStock(activity.getStock());
-        //扣除参与活动的商品的库存
+    public void add(ActivityRuleDTO activityRuleDTO) throws IllegalAccessException {
+        Activity activity=new Activity(activityRuleDTO);
+        //查询参与活动的商品
         Goods goods=goodsMapper.selectById(activity.getGoodsId());
+        System.out.println(activity);
         if(goods==null){
             throw new ServiceException(ResultCode.GOODS_ERROR);
         }
@@ -62,14 +68,24 @@ public class ActivityServiceImpl extends ServiceImpl<ActivityMapper,Activity>  i
             //库存不足
             throw new ServiceException(ResultCode.GOODS_SKU_QUANTITY_NOT_ENOUGH);
         }
+        //活动结束时间早于开始时间
+        if(activity.getEndTime().isBefore(activity.getStartTime())){
+            throw new ServiceException(ResultCode.ACTIVITY_DURATION_ERROR);
+        }
         //数据库插入活动
-        this.saveOrUpdate(activity);
+        activityMapper.insert(activity);
         log.info("成功插入活动"+activity);
+        //数据库插入规则
+        Rule rule=new Rule(activityRuleDTO);
+        ruleMapper.insert(rule);
+        //数据库插入活动与规则的关系
+        ruleMapper.insertActivityRuleRelation(activity.getId(),rule.getId());
         //删除商品库存
         goods.setStock(goods.getStock()-activity.getStock());
         goodsMapper.updateById(goods);
         log.info("成功删除商品库存");
         //redis插入活动
+        //TODO判断时间是否
         Duration duration= Duration.between(activity.getStartTime(),activity.getEndTime());
         Map beanMap= BeanUtil.beanToMap(activity);
         String key= RedisKeyUtil.generateActivityKey(activity.getId());
@@ -86,7 +102,6 @@ public class ActivityServiceImpl extends ServiceImpl<ActivityMapper,Activity>  i
         key=RedisKeyUtil.generateStockKey(goods.getId(),activity.getId());
         cache.put(key,activity.getStock(),duration.getSeconds());
         log.info("成功预热库存");
-
     }
 
     @Override
@@ -140,5 +155,11 @@ public class ActivityServiceImpl extends ServiceImpl<ActivityMapper,Activity>  i
         //经过MP分页查询将所有的分页(total/结果/页面/条数/xxx)数据封装到iPage对象
         iPage = activityMapper.selectPage(iPage,queryWrapper);
         return iPage;
+    }
+
+    @Override
+    public Activity getLatestActivity() {
+        Activity activity=activityMapper.selectLatestOne();
+        return activity;
     }
 }

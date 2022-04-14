@@ -16,10 +16,12 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @ToString
-public class MQMessage implements Serializable {
+public class ConsumerArg implements Serializable {
     private static final long serialVersionUID = 1237728300174142127L;
-    //库存流水id
+
+    private String goodsId;
+
+    private String activityId;
+
     private String stockLogId;
-    //存款记录
-    private DepositRecord depositRecord;
 }

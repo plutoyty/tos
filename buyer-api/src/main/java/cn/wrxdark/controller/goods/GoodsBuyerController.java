@@ -7,6 +7,7 @@ import cn.wrxdark.modules.goods.entity.dos.Goods;
 import cn.wrxdark.modules.goods.service.GoodsService;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import io.swagger.annotations.Api;
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +20,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/buyer/goods")
-@Api(tags = "买家端，商品接口")
+@Api(tags = "商品接口")
 @Slf4j
 public class GoodsBuyerController {
 
@@ -27,6 +28,7 @@ public class GoodsBuyerController {
     private GoodsService goodsService;
 
 
+    @Operation(summary = "添加商品")
     @PostMapping
     public ResultMessage add(@RequestBody Goods goods){
         goodsService.addOrUpdateGoods(goods);
@@ -48,6 +50,7 @@ public class GoodsBuyerController {
      * @param pageSize 每页大小
      * @return
      */
+    @Operation(summary = "获得商品的分页列表")
     @GetMapping("/list")
     public ResultMessage<IPage<Goods>> getList(
             @RequestParam("pageNum") Integer pageNum,
@@ -59,6 +62,7 @@ public class GoodsBuyerController {
     }
 
 
+    @Operation(summary = "删除商品")
     @DeleteMapping("/{goodsId}")
     public ResultMessage del(@PathVariable String goodsId){
         goodsService.del(goodsId);
@@ -72,6 +76,7 @@ public class GoodsBuyerController {
      * @author  刘宇阳
      * @return
      */
+    @Operation(summary = "上架商品")
     @PutMapping("/on-shelf/{goodsId}")
     public ResultMessage onShelf(
             @PathVariable("goodsId") String goodsId
@@ -86,6 +91,7 @@ public class GoodsBuyerController {
      * @param goodsId 商品id
      * @return
      */
+    @Operation(summary = "下架商品")
     @PutMapping("/off-shelf/{goodsId}")
     public ResultMessage offShelf(
             @PathVariable("goodsId") String goodsId

@@ -21,8 +21,10 @@ public enum StatusEnum {
     BUY_DEPOSIT_FAIL(0),
     //库存流水初始状态
     STOCK_LOG_INIT(0),
-    //库存流水初始状态
-    STOCK_LOG_SUCCESS(1),
+    //库存流水提交状态
+    STOCK_LOG_COMMIT(1),
+    //库存流水回滚状态
+    STOCKLOG_LOG_ROLLBACK(2),
     GOODS_ON_SHELF(1),
     ACTIVITY_OPEN(1);
 
