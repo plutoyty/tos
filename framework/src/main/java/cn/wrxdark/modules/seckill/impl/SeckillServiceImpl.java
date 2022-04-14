@@ -7,6 +7,7 @@ import cn.wrxdark.common.entity.enums.ResultUtil;
 import cn.wrxdark.common.entity.enums.StatusEnum;
 import cn.wrxdark.common.entity.vo.ResultMessage;
 import cn.wrxdark.common.exception.ServiceException;
+import cn.wrxdark.modules.member.entity.dos.Member;
 import cn.wrxdark.modules.member.mapper.MemberMapper;
 import cn.wrxdark.modules.seckill.SeckillService;
 import cn.wrxdark.modules.stockLog.entity.dos.StockLog;
@@ -27,7 +28,6 @@ import javax.script.ScriptEngineManager;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.time.LocalDateTime;
-import java.util.HashMap;
 import java.util.Random;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
@@ -111,12 +111,28 @@ public class SeckillServiceImpl implements SeckillService {
      */
     @Override
     public void check(String path, String memberId, String goodsId, String activityId) {
-        String key=RedisKeyUtil.generateTempPathKey(memberId,goodsId,activityId);
-        String pathInRedis= (String) cache.get(key);
+        String pathKey=RedisKeyUtil.generateTempPathKey(memberId,goodsId,activityId);
+        String pathInRedis= (String) cache.get(pathKey);
         boolean res=path.equals(pathInRedis);
         //路径不正确的
         if(!res){
             throw new ServiceException(ResultCode.PATH_ERROR);
+        }
+        //用户是否有钱去买产品
+        Member member = memberMapper.selectById(memberId);
+        double memberBalance=member.getBalance();
+        String goodsKey= RedisKeyUtil.generateGoodsKey(goodsId);
+        double goodsPrice= (double) cache.getHash(goodsKey,"initialDeposit");
+        res=memberBalance>=goodsPrice;
+        if(!res){
+            //用户余额不足
+            throw new ServiceException(ResultCode.USER_BALANCE_ERROR);
+        }
+        //redis中的库存是否足够
+        res=(int)(cache.get(RedisKeyUtil.generateStockKey(goodsId,activityId)))>=1;
+        //库存不足
+        if(!res){
+            throw new ServiceException(ResultCode.GOODS_SKU_QUANTITY_NOT_ENOUGH);
         }
     }
 

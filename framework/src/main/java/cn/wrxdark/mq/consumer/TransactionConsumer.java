@@ -9,8 +9,6 @@ import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.Map;
-
 /**
  * @author 刘宇阳
  * @create 2022/3/27
@@ -32,7 +30,7 @@ public class TransactionConsumer implements RocketMQListener<String>{
         JSONObject jsonObject = JSON.parseObject(message);
         String goodsId=jsonObject.getString("goodsId");
         String activityId=jsonObject.getString("activityId");
-        log.info("扣减数据库中的库存");
+        log.info("扣减数据库中的库存,活动id为{}",activityId);
         activityMapper.decrStock(activityId,goodsId,1);
     }
 }

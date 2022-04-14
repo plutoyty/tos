@@ -1,10 +1,10 @@
 package cn.wrxdark.mq.localListener;
 
 import cn.wrxdark.cache.Cache;
-import cn.wrxdark.common.entity.enums.ResultCode;
 import cn.wrxdark.common.entity.enums.StatusEnum;
 import cn.wrxdark.common.exception.ServiceException;
-import cn.wrxdark.modules.member.entity.dos.Member;
+import cn.wrxdark.modules.depositRecord.entity.dos.DepositRecord;
+import cn.wrxdark.modules.depositRecord.mapper.DRecordMapper;
 import cn.wrxdark.modules.member.mapper.MemberMapper;
 import cn.wrxdark.modules.stockLog.entity.dos.StockLog;
 import cn.wrxdark.modules.stockLog.mapper.StockLogMapper;
@@ -20,10 +20,9 @@ import org.apache.rocketmq.spring.core.RocketMQLocalTransactionState;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.Message;
 
-import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.Map;
+import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -40,42 +39,32 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
     private Cache cache;
     @Autowired
     private MemberMapper memberMapper;
+    @Autowired
+    private DRecordMapper recordMapper;
     /**
      * 执行本地事务(在前面已经执行完了)
      * @param msg
      * @param arg
      * @return
      */
-    @SneakyThrows
     @Override
     public RocketMQLocalTransactionState executeLocalTransaction(Message msg, Object arg) {
+        System.out.println(msg);
+        System.out.println(arg);
         try{
             ProducerArg producerArg= (ProducerArg) arg;
             String goodsId= producerArg.getGoodsId();
             String memberId= producerArg.getMemberId();
             String activityId= producerArg.getActivityId();
             String stockLogId=producerArg.getStockLogId();
-            //用户是否有钱去买产品
-            String goodsKey= RedisKeyUtil.generateGoodsKey(goodsId);
-            Member member = memberMapper.selectById(memberId);
-            double memberBalance=member.getBalance();
-            double goodsPrice= (double) cache.getHash(goodsKey,"initialDeposit");
-            if(memberBalance<goodsPrice){
-                //用户余额不足
-                throw new ServiceException(ResultCode.USER_BALANCE_ERROR);
-            }
-            //试图扣减redis中的库存
-            boolean res=decrStock(goodsId,activityId);
-            //库存不足
-            if(!res){
-                throw new ServiceException(ResultCode.GOODS_SKU_QUANTITY_NOT_ENOUGH);
-            }
+            //扣减redis中的库存
+            decrStock(goodsId,activityId);
+            log.info("扣减redis中的库存");
             //扣减用户余额
+            String goodsKey= RedisKeyUtil.generateGoodsKey(goodsId);
+            double goodsPrice= (double) cache.getHash(goodsKey,"initialDeposit");
             memberMapper.decrBalance(memberId,goodsPrice);
             log.info("扣减了用户余额");
-            //更新流水状态为提交
-            stockLogMapper.updateStatus(stockLogId,StatusEnum.STOCK_LOG_COMMIT.statusCode());
-            log.info("更新流水状态为提交");
             //在redis中存下用户已购买的记录
             String haveBoughtKey=RedisKeyUtil.generateHaveBoughtKey(memberId,goodsId,activityId);
             String activityKey=RedisKeyUtil.generateActivityKey(activityId);
@@ -85,9 +74,16 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
             long expireSeconds=duration.getSeconds();
             log.info("保存下该用户的已经购买过的记录");
             cache.put(haveBoughtKey,"",expireSeconds, TimeUnit.SECONDS);
+            //更新流水状态为提交
+            stockLogMapper.updateStatus(stockLogId,StatusEnum.STOCK_LOG_COMMIT.statusCode());
+            log.info("更新流水状态为提交");
+            //保存存款记录
+            DepositRecord dr=new DepositRecord(UUID.randomUUID().toString(),memberId,goodsId,activityId,goodsPrice,StatusEnum.BUY_DEPOSIT_SUCESS.statusCode());
+            recordMapper.insert(dr);
             return RocketMQLocalTransactionState.COMMIT;
         }catch (ServiceException e){
-            throw e;
+            e.printStackTrace();
+            return RocketMQLocalTransactionState.ROLLBACK;
         }
     }
 
@@ -104,6 +100,7 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
         String json = new String((byte[]) msg.getPayload());
         JSONObject jsonObject = JSON.parseObject(json);
         String stockLogId = jsonObject.getString("stockLogId");
+        log.info("回查的流水记录id为{}",stockLogId);
         StockLog stockLogInSql = stockLogMapper.selectById(stockLogId);
         if(stockLogInSql.getStatus().equals(StatusEnum.STOCK_LOG_INIT.statusCode())){
             //没有处理该流水，未知状态
