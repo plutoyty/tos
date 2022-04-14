@@ -84,6 +84,15 @@ public class SeckillController {
         return ResultUtil.success();
     }
 
+    @Autowired
+    private Cache cache;
+
+    @GetMapping("/test")
+    public void test(){
+        System.out.println(cache.getHash("{GOODS}_-19-1"));
+        System.out.println(cache.getHash("{ACTIVITY}_-23"));
+    }
+
     /**
      * @description 弃用 数学公式验证码
      * @author 刘宇阳

@@ -3,6 +3,7 @@ package cn.wrxdark.modules.member.service;
 import cn.wrxdark.common.entity.vo.ResultMessage;
 import cn.wrxdark.common.security.token.Token;
 import cn.wrxdark.modules.member.entity.dos.Member;
+import cn.wrxdark.modules.member.entity.vo.MemberVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.springframework.stereotype.Service;
@@ -40,4 +41,12 @@ public interface MemberService extends IService<Member> {
      * @return
      */
     IPage<Member> getList(Integer pageNum, Integer pageSize);
+
+    /**
+     *
+     * @param member
+     * @param id
+     * @return
+     */
+    MemberVo check(Member member, Integer id);
 }

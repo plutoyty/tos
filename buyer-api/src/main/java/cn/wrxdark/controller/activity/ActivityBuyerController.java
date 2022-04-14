@@ -1,6 +1,7 @@
 package cn.wrxdark.controller.activity;
 
 
+import cn.wrxdark.cache.Cache;
 import cn.wrxdark.common.entity.enums.ResultUtil;
 import cn.wrxdark.common.entity.vo.ResultMessage;
 import cn.wrxdark.modules.activity.entity.dos.Activity;
@@ -24,6 +25,8 @@ import org.springframework.web.bind.annotation.*;
 public class ActivityBuyerController {
     @Autowired
     private ActivityService activityService;
+    @Autowired
+    private Cache cache;
 
     /**
      * 添加活动
@@ -32,9 +35,10 @@ public class ActivityBuyerController {
      * @throws IllegalAccessException
      */
     @Operation(summary="添加活动")
-    @PostMapping
-    public ResultMessage add(@RequestBody ActivityRuleDTO activityRuleDTO) throws IllegalAccessException {
-        activityService.add(activityRuleDTO);
+    @PostMapping("/{ruleId}")
+    public ResultMessage add(@PathVariable("ruleId")String ruleId,
+            @RequestBody ActivityRuleDTO activityRuleDTO) throws IllegalAccessException {
+        activityService.add(activityRuleDTO,ruleId);
         return ResultUtil.success();
     }
 

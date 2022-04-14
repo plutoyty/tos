@@ -146,6 +146,10 @@ public enum CachePrefix {
      */
     ACTIVITY,
     /**
+     * 活动规则
+     */
+    ACTIVITY_RULE,
+    /**
      * 库存流水
      */
     STOCK_LOG,

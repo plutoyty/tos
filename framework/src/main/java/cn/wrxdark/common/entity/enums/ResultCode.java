@@ -142,6 +142,12 @@ public enum ResultCode {
     VERIFICATION_IMAGE_CREATE_ERROR(80211,"数学公式验证码创建错误"),
     VERIFICATION_ERROR(80211,"验证码错误"),
     /**
+     * 规则
+     */
+    RULE_NOT_COMPLETE(80311,"规则不完整"),
+    RULE_ID_NULL(80312,"规则ID为空"),
+
+    /**
      * 其他
      */
     PRICE_NEGATIVE_ERROR(90006, "价格不能是负数"),

@@ -19,10 +19,19 @@ public interface ActivityService extends IService<Activity> {
      * @param activityRuleDTO 活动+规则对象
      * @throws IllegalAccessException
      */
-    void add(ActivityRuleDTO activityRuleDTO) throws IllegalAccessException;
+    void add(ActivityRuleDTO activityRuleDTO,String ruleId) throws IllegalAccessException;
 
+    /**
+     *
+     * @param activityId
+     * @return
+     */
     Activity get(String activityId);
 
+    /**
+     *
+     * @param activityId
+     */
     void delById(String activityId);
 
     /**
@@ -48,5 +57,15 @@ public interface ActivityService extends IService<Activity> {
      */
     IPage<Activity> listPage(Integer pageNum, Integer pageSize);
 
+    /**
+     * 生成改活动的规则
+     * @param activityId
+     */
+    void generateRule(String activityId);
+
+    /**
+     *
+     * @return
+     */
     Activity getLatestActivity();
 }

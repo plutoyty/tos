@@ -136,6 +136,5 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
             e.printStackTrace();
             return false;
         }
-
     }
 }

@@ -6,10 +6,14 @@ import cn.wrxdark.common.security.AuthUser;
 import cn.wrxdark.common.security.context.UserContext;
 import cn.wrxdark.common.security.token.MemberTokenGenerate;
 import cn.wrxdark.common.security.token.Token;
+import cn.wrxdark.modules.activity.service.ActivityService;
 import cn.wrxdark.modules.member.entity.dos.Member;
+import cn.wrxdark.modules.member.entity.vo.MemberVo;
 import cn.wrxdark.modules.member.mapper.MemberMapper;
 import cn.wrxdark.modules.member.service.MemberService;
 
+import cn.wrxdark.modules.rule.entity.dos.CheckResult;
+import cn.wrxdark.util.RuleUtil;
 import cn.wrxdark.util.SM3Util;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 
@@ -17,6 +21,8 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
+import org.kie.api.KieBase;
+import org.kie.api.runtime.KieSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
@@ -34,6 +40,9 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
 
     @Autowired
     private MemberTokenGenerate memberTokenGenerate;
+
+    @Autowired
+    private ActivityService activityService;
 
     /**
      * 登录
@@ -183,5 +192,23 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         this.update(lambdaUpdateWrapper);
         return member;*/
         return null;
+    }
+
+
+    @Override
+    public MemberVo check(Member member, Integer id) {
+        MemberVo memberVo = new MemberVo();
+        memberVo.setMember(member);
+        CheckResult checkResult = new CheckResult();
+        memberVo.setCheckResult(checkResult);
+        activityService.generateRule(id+"");
+        KieBase kieBase = (KieBase) RuleUtil.hashMap.get(id+"");
+        KieSession session = kieBase.newKieSession();
+        System.out.println(member);
+        session.insert(member);
+        session.insert(checkResult);
+        session.setGlobal("logger",log);
+        session.fireAllRules();
+        return memberVo;
     }
 }

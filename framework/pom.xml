@@ -31,6 +31,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
+
         <!--        spring-jdbc依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -65,10 +66,6 @@
             <artifactId>freemarker</artifactId>
         </dependency>
         <!--        springboot热部署依赖-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-devtools</artifactId>-->
-<!--        </dependency>-->
 
         <!--        Spring Boot内置监控功能，Actuator会把它能收集到的所有信息都暴露给JMX-->
         <!--        Actuator默认把所有访问点暴露给JMX，但处于安全原因，只有health和info会暴露给Web-->

@@ -1,19 +1,18 @@
 package cn.wrxdark.modules.rule.mapper;
 
-import cn.wrxdark.modules.rule.mapper.entity.dos.Rule;
+import cn.wrxdark.modules.rule.entity.dos.Rule;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Component;
+import org.apache.ibatis.annotations.Update;
+import org.springframework.stereotype.Repository;
 
-/**
- * @author 刘宇阳
- * @create 2022/4/14
- * @description
- */
 @Mapper
-@Component
+@Repository
 public interface RuleMapper extends BaseMapper<Rule> {
-    @Insert("INSERT INTO tos_activity_rule(activity_id,rule_id) VALUES(#{activityId},#{ruleId})")
-    void insertActivityRuleRelation(String activityId,String ruleId);
+
+    @Update("update tos_rule set is_deleted=1 where id=#{id}")
+    void deleteRuleById(Integer id);
+
+//    @Select("select * from tos_rule where is_deleted=0 and id=#{id}")
+//    Rule selectById(@Param("id") Integer id);
 }

@@ -6869,3 +6869,1035 @@ Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpect
 	at org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer.deserialize(Jackson2JsonRedisSerializer.java:73)
 	... 63 common frames omitted
 
+2022-04-14 18:55:35.326  INFO 2068 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 2068 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-14 18:55:35.330  INFO 2068 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 18:55:36.484  INFO 2068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 18:55:36.485  INFO 2068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 18:55:36.518  INFO 2068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2022-04-14 18:55:36.968  INFO 2068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 18:55:36.974  INFO 2068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 18:55:36.974  INFO 2068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 18:55:36.975  INFO 2068 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-14 18:55:36.975  INFO 2068 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-14 18:55:36.975  INFO 2068 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-14 18:55:36.978  INFO 2068 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-14 18:55:37.164  INFO 2068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 18:55:37.164  INFO 2068 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1784 ms
+2022-04-14 18:55:44.144  INFO 2068 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-14 18:55:45.791  INFO 2068 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 18:55:45.792  INFO 2068 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-14 18:55:45.811  INFO 2068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-14 18:55:46.277  INFO 2068 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 11.556 seconds (JVM running for 13.858)
+2022-04-14 18:55:46.678  INFO 2068 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-14 18:55:47.271  INFO 2068 --- [RMI TCP Connection(1)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-14 18:55:48.095  INFO 2068 --- [RMI TCP Connection(3)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-14 18:55:48.095  INFO 2068 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-14 18:55:48.097  INFO 2068 --- [RMI TCP Connection(3)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-14 18:57:24.424  INFO 2068 --- [ConsumeMessageThread_1] c.w.mq.consumer.TransactionConsumer      : 扣减数据库中的库存,活动id为19
+2022-04-14 18:59:27.648  INFO 66624 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 66624 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-14 18:59:27.651  INFO 66624 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 18:59:28.765  INFO 66624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 18:59:28.767  INFO 66624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 18:59:28.801  INFO 66624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2022-04-14 18:59:29.251  INFO 66624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 18:59:29.257  INFO 66624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 18:59:29.258  INFO 66624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 18:59:29.259  INFO 66624 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-14 18:59:29.259  INFO 66624 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-14 18:59:29.259  INFO 66624 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-14 18:59:29.262  INFO 66624 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-14 18:59:29.446  INFO 66624 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 18:59:29.446  INFO 66624 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1753 ms
+2022-04-14 18:59:36.438  INFO 66624 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-14 18:59:38.743  INFO 66624 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 18:59:38.744  INFO 66624 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-14 18:59:38.767  INFO 66624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-14 18:59:39.424  INFO 66624 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 12.232 seconds (JVM running for 14.354)
+2022-04-14 18:59:41.531  INFO 66624 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-14 18:59:41.531  INFO 66624 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-14 18:59:41.534  INFO 66624 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-04-14 18:59:41.657  INFO 66624 --- [RMI TCP Connection(5)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-14 18:59:41.872 ERROR 66624 --- [http-nio-80-exec-1] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[RuntimeException]:
+
+org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Unexpected token (START_OBJECT), expected START_ARRAY: need JSON Array to contain As.WRAPPER_ARRAY type information for class java.lang.Object
+ at [Source: (byte[])"{"date":{"year":2022,"month":"APRIL","day":15,"dayOfMonth":15,"monthValue":4,"dayOfWeek":"FRIDAY","era":["java.time.chrono.IsoEra","CE"],"dayOfYear":105,"leapYear":false,"chronology":{"id":"ISO","calendarType":"iso8601"},"prolepticMonth":24267},"time":{"hour":0,"minute":0,"second":0,"nano":0},"month":"APRIL","year":2022,"dayOfMonth":15,"hour":0,"minute":0,"monthValue":4,"nano":0,"second":0,"dayOfWeek":"FRIDAY","dayOfYear":105,"chronology":["java.time.chrono.IsoChronology",{"id":"ISO","calendarTy"[truncated 16 bytes]; line: 1, column: 1]; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpected token (START_OBJECT), expected START_ARRAY: need JSON Array to contain As.WRAPPER_ARRAY type information for class java.lang.Object
+ at [Source: (byte[])"{"date":{"year":2022,"month":"APRIL","day":15,"dayOfMonth":15,"monthValue":4,"dayOfWeek":"FRIDAY","era":["java.time.chrono.IsoEra","CE"],"dayOfYear":105,"leapYear":false,"chronology":{"id":"ISO","calendarType":"iso8601"},"prolepticMonth":24267},"time":{"hour":0,"minute":0,"second":0,"nano":0},"month":"APRIL","year":2022,"dayOfMonth":15,"hour":0,"minute":0,"monthValue":4,"nano":0,"second":0,"dayOfWeek":"FRIDAY","dayOfYear":105,"chronology":["java.time.chrono.IsoChronology",{"id":"ISO","calendarTy"[truncated 16 bytes]; line: 1, column: 1]
+	at org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer.deserialize(Jackson2JsonRedisSerializer.java:75)
+	at org.springframework.data.redis.core.AbstractOperations.deserializeHashValue(AbstractOperations.java:355)
+	at org.springframework.data.redis.core.AbstractOperations.deserializeHashMap(AbstractOperations.java:299)
+	at org.springframework.data.redis.core.DefaultHashOperations.entries(DefaultHashOperations.java:247)
+	at cn.wrxdark.cache.impl.RedisCache.getHash(RedisCache.java:149)
+	at cn.wrxdark.controller.seckill.SeckillController.test(SeckillController.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpected token (START_OBJECT), expected START_ARRAY: need JSON Array to contain As.WRAPPER_ARRAY type information for class java.lang.Object
+ at [Source: (byte[])"{"date":{"year":2022,"month":"APRIL","day":15,"dayOfMonth":15,"monthValue":4,"dayOfWeek":"FRIDAY","era":["java.time.chrono.IsoEra","CE"],"dayOfYear":105,"leapYear":false,"chronology":{"id":"ISO","calendarType":"iso8601"},"prolepticMonth":24267},"time":{"hour":0,"minute":0,"second":0,"nano":0},"month":"APRIL","year":2022,"dayOfMonth":15,"hour":0,"minute":0,"monthValue":4,"nano":0,"second":0,"dayOfWeek":"FRIDAY","dayOfYear":105,"chronology":["java.time.chrono.IsoChronology",{"id":"ISO","calendarTy"[truncated 16 bytes]; line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.wrongTokenException(DeserializationContext.java:1650)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportWrongTokenException(DeserializationContext.java:1400)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._locateTypeId(AsArrayTypeDeserializer.java:141)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:96)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer$Vanilla.deserializeWithType(UntypedObjectDeserializer.java:710)
+	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:68)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4526)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3572)
+	at org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer.deserialize(Jackson2JsonRedisSerializer.java:73)
+	... 63 common frames omitted
+
+2022-04-14 18:59:42.023  INFO 66624 --- [RMI TCP Connection(5)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-14 19:03:17.869  INFO 63412 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 63412 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-14 19:03:17.872  INFO 63412 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 19:03:18.952  INFO 63412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 19:03:18.954  INFO 63412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 19:03:18.985  INFO 63412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2022-04-14 19:03:19.389  INFO 63412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 19:03:19.396  INFO 63412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 19:03:19.396  INFO 63412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 19:03:19.397  INFO 63412 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-14 19:03:19.397  INFO 63412 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-14 19:03:19.397  INFO 63412 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-14 19:03:19.400  INFO 63412 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-14 19:03:19.616  INFO 63412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 19:03:19.616  INFO 63412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1705 ms
+2022-04-14 19:03:26.719  INFO 63412 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-14 19:03:28.664  INFO 63412 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 19:03:28.665  INFO 63412 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-14 19:03:28.684  INFO 63412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-14 19:03:29.213  INFO 63412 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 11.777 seconds (JVM running for 13.842)
+2022-04-14 19:03:29.701  INFO 63412 --- [RMI TCP Connection(1)-192.168.50.110] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-14 19:03:29.702  INFO 63412 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-14 19:03:29.703  INFO 63412 --- [RMI TCP Connection(1)-192.168.50.110] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-14 19:03:31.134  INFO 63412 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-14 19:03:31.591  INFO 63412 --- [RMI TCP Connection(3)-192.168.50.110] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-14 19:03:34.719 ERROR 63412 --- [http-nio-80-exec-1] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[RuntimeException]:
+
+org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Unexpected token (START_OBJECT), expected START_ARRAY: need JSON Array to contain As.WRAPPER_ARRAY type information for class java.lang.Object
+ at [Source: (byte[])"{"date":{"year":2022,"month":"APRIL","day":15,"dayOfMonth":15,"monthValue":4,"dayOfWeek":"FRIDAY","era":["java.time.chrono.IsoEra","CE"],"dayOfYear":105,"leapYear":false,"chronology":{"id":"ISO","calendarType":"iso8601"},"prolepticMonth":24267},"time":{"hour":0,"minute":0,"second":0,"nano":0},"month":"APRIL","year":2022,"dayOfMonth":15,"hour":0,"minute":0,"monthValue":4,"nano":0,"second":0,"dayOfWeek":"FRIDAY","dayOfYear":105,"chronology":["java.time.chrono.IsoChronology",{"id":"ISO","calendarTy"[truncated 16 bytes]; line: 1, column: 1]; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpected token (START_OBJECT), expected START_ARRAY: need JSON Array to contain As.WRAPPER_ARRAY type information for class java.lang.Object
+ at [Source: (byte[])"{"date":{"year":2022,"month":"APRIL","day":15,"dayOfMonth":15,"monthValue":4,"dayOfWeek":"FRIDAY","era":["java.time.chrono.IsoEra","CE"],"dayOfYear":105,"leapYear":false,"chronology":{"id":"ISO","calendarType":"iso8601"},"prolepticMonth":24267},"time":{"hour":0,"minute":0,"second":0,"nano":0},"month":"APRIL","year":2022,"dayOfMonth":15,"hour":0,"minute":0,"monthValue":4,"nano":0,"second":0,"dayOfWeek":"FRIDAY","dayOfYear":105,"chronology":["java.time.chrono.IsoChronology",{"id":"ISO","calendarTy"[truncated 16 bytes]; line: 1, column: 1]
+	at org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer.deserialize(Jackson2JsonRedisSerializer.java:75)
+	at org.springframework.data.redis.core.AbstractOperations.deserializeHashValue(AbstractOperations.java:355)
+	at org.springframework.data.redis.core.AbstractOperations.deserializeHashMap(AbstractOperations.java:299)
+	at org.springframework.data.redis.core.DefaultHashOperations.entries(DefaultHashOperations.java:247)
+	at cn.wrxdark.cache.impl.RedisCache.getHash(RedisCache.java:149)
+	at cn.wrxdark.controller.seckill.SeckillController.test(SeckillController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpected token (START_OBJECT), expected START_ARRAY: need JSON Array to contain As.WRAPPER_ARRAY type information for class java.lang.Object
+ at [Source: (byte[])"{"date":{"year":2022,"month":"APRIL","day":15,"dayOfMonth":15,"monthValue":4,"dayOfWeek":"FRIDAY","era":["java.time.chrono.IsoEra","CE"],"dayOfYear":105,"leapYear":false,"chronology":{"id":"ISO","calendarType":"iso8601"},"prolepticMonth":24267},"time":{"hour":0,"minute":0,"second":0,"nano":0},"month":"APRIL","year":2022,"dayOfMonth":15,"hour":0,"minute":0,"monthValue":4,"nano":0,"second":0,"dayOfWeek":"FRIDAY","dayOfYear":105,"chronology":["java.time.chrono.IsoChronology",{"id":"ISO","calendarTy"[truncated 16 bytes]; line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.wrongTokenException(DeserializationContext.java:1650)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportWrongTokenException(DeserializationContext.java:1400)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._locateTypeId(AsArrayTypeDeserializer.java:141)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:96)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer$Vanilla.deserializeWithType(UntypedObjectDeserializer.java:710)
+	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:68)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4526)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3572)
+	at org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer.deserialize(Jackson2JsonRedisSerializer.java:73)
+	... 63 common frames omitted
+
+2022-04-14 19:27:28.712  INFO 9336 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 9336 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-14 19:27:28.715  INFO 9336 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 19:27:29.844  INFO 9336 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 19:27:29.846  INFO 9336 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 19:27:29.878  INFO 9336 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2022-04-14 19:27:30.301  INFO 9336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 19:27:30.308  INFO 9336 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 19:27:30.308  INFO 9336 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 19:27:30.309  INFO 9336 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-14 19:27:30.309  INFO 9336 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-14 19:27:30.309  INFO 9336 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-14 19:27:30.312  INFO 9336 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-14 19:27:30.493  INFO 9336 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 19:27:30.493  INFO 9336 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1736 ms
+2022-04-14 19:27:32.149  WARN 9336 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'activityBuyerController': Unsatisfied dependency expressed through field 'activityService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'activityServiceImpl': Unsatisfied dependency expressed through field 'ruleMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.wrxdark.rule.mapper.RuleMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-04-14 19:27:32.162  INFO 9336 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-14 19:27:32.174  INFO 9336 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-14 19:27:32.189 ERROR 9336 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field ruleMapper in cn.wrxdark.modules.activity.service.impl.ActivityServiceImpl required a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' in your configuration.
+
+2022-04-14 19:27:52.916  INFO 67044 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 67044 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-14 19:27:52.919  INFO 67044 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 19:27:54.187  INFO 67044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 19:27:54.188  INFO 67044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 19:27:54.224  INFO 67044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2022-04-14 19:27:54.739  INFO 67044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 19:27:54.746  INFO 67044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 19:27:54.746  INFO 67044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 19:27:54.747  INFO 67044 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-14 19:27:54.747  INFO 67044 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-14 19:27:54.747  INFO 67044 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-14 19:27:54.750  INFO 67044 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-14 19:27:54.934  INFO 67044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 19:27:54.934  INFO 67044 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1970 ms
+2022-04-14 19:27:56.532  WARN 67044 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'activityBuyerController': Unsatisfied dependency expressed through field 'activityService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'activityServiceImpl': Unsatisfied dependency expressed through field 'ruleMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.wrxdark.rule.mapper.RuleMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-04-14 19:27:56.544  INFO 67044 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-14 19:27:56.555  INFO 67044 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-14 19:27:56.570 ERROR 67044 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field ruleMapper in cn.wrxdark.modules.activity.service.impl.ActivityServiceImpl required a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' in your configuration.
+
+2022-04-14 19:28:45.229  INFO 60928 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 60928 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-14 19:28:45.232  INFO 60928 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 19:28:46.435  INFO 60928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 19:28:46.437  INFO 60928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 19:28:46.472  INFO 60928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2022-04-14 19:28:46.972  INFO 60928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 19:28:46.980  INFO 60928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 19:28:46.980  INFO 60928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 19:28:46.982  INFO 60928 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-14 19:28:46.982  INFO 60928 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-14 19:28:46.982  INFO 60928 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-14 19:28:46.985  INFO 60928 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-14 19:28:47.186  INFO 60928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 19:28:47.186  INFO 60928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1905 ms
+2022-04-14 19:28:48.862  WARN 60928 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rulesController': Unsatisfied dependency expressed through field 'ruleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ruleServiceImpl': Unsatisfied dependency expressed through field 'ruleMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.wrxdark.rule.mapper.RuleMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-04-14 19:28:48.875  INFO 60928 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-14 19:28:48.888  INFO 60928 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-14 19:28:48.903 ERROR 60928 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field ruleMapper in cn.wrxdark.rule.service.Impl.RuleServiceImpl required a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' in your configuration.
+
+2022-04-14 19:29:52.470  INFO 65600 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 65600 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-14 19:29:52.473  INFO 65600 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 19:29:53.619  INFO 65600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 19:29:53.621  INFO 65600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 19:29:53.651  INFO 65600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2022-04-14 19:29:54.064  INFO 65600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 19:29:54.070  INFO 65600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 19:29:54.071  INFO 65600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 19:29:54.072  INFO 65600 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-14 19:29:54.072  INFO 65600 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-14 19:29:54.072  INFO 65600 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-14 19:29:54.075  INFO 65600 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-14 19:29:54.269  INFO 65600 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 19:29:54.269  INFO 65600 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1758 ms
+2022-04-14 19:29:55.888  WARN 65600 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rulesController': Unsatisfied dependency expressed through field 'ruleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ruleServiceImpl': Unsatisfied dependency expressed through field 'ruleMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.wrxdark.rule.mapper.RuleMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-04-14 19:29:55.900  INFO 65600 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-14 19:29:55.913  INFO 65600 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-14 19:29:55.929 ERROR 65600 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field ruleMapper in cn.wrxdark.rule.service.Impl.RuleServiceImpl required a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' in your configuration.
+
+2022-04-14 19:31:13.460  INFO 66900 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 66900 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-14 19:31:13.463  INFO 66900 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 19:31:14.744  INFO 66900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 19:31:14.745  INFO 66900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 19:31:14.777  INFO 66900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2022-04-14 19:31:15.190  INFO 66900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 19:31:15.197  INFO 66900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 19:31:15.197  INFO 66900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 19:31:15.198  INFO 66900 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-14 19:31:15.198  INFO 66900 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-14 19:31:15.198  INFO 66900 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-14 19:31:15.200  INFO 66900 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-14 19:31:15.372  INFO 66900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 19:31:15.372  INFO 66900 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1854 ms
+2022-04-14 19:31:17.051  WARN 66900 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rulesController': Unsatisfied dependency expressed through field 'ruleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ruleServiceImpl': Unsatisfied dependency expressed through field 'ruleMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.wrxdark.rule.mapper.RuleMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-04-14 19:31:17.064  INFO 66900 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-14 19:31:17.077  INFO 66900 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-14 19:31:17.092 ERROR 66900 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field ruleMapper in cn.wrxdark.rule.service.Impl.RuleServiceImpl required a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' in your configuration.
+
+2022-04-14 19:31:31.520  INFO 63560 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_152 on PC-OF-LYY-Y7000P with PID 63560 (E:\tos\tos\buyer-api\target\classes started by sunshine in E:\tos\tos)
+2022-04-14 19:31:31.523  INFO 63560 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 19:31:32.696  INFO 63560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 19:31:32.698  INFO 63560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 19:31:32.729  INFO 63560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2022-04-14 19:31:33.141  INFO 63560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 19:31:33.147  INFO 63560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 19:31:33.148  INFO 63560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 19:31:33.149  INFO 63560 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-04-14 19:31:33.149  INFO 63560 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-14 19:31:33.149  INFO 63560 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-14 19:31:33.151  INFO 63560 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-04-14 19:31:33.334  INFO 63560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 19:31:33.334  INFO 63560 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1765 ms
+2022-04-14 19:31:35.032  WARN 63560 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rulesController': Unsatisfied dependency expressed through field 'ruleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ruleServiceImpl': Unsatisfied dependency expressed through field 'ruleMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.wrxdark.rule.mapper.RuleMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-04-14 19:31:35.046  INFO 63560 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-14 19:31:35.059  INFO 63560 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-14 19:31:35.076 ERROR 63560 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field ruleMapper in cn.wrxdark.rule.service.Impl.RuleServiceImpl required a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' in your configuration.
+
+2022-04-14 19:57:16.484  INFO 19820 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_291 on LAPTOP-U4O6F68E with PID 19820 (G:\服创\tos\buyer-api\target\classes started by 杨pc in G:\服创\tos)
+2022-04-14 19:57:16.484  INFO 19820 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 19:57:17.440  INFO 19820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 19:57:17.451  INFO 19820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 19:57:17.471  INFO 19820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2022-04-14 19:57:17.884  INFO 19820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 19:57:17.891  INFO 19820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 19:57:17.891  INFO 19820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 19:57:17.965  INFO 19820 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 19:57:17.965  INFO 19820 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1435 ms
+2022-04-14 19:57:19.760  WARN 19820 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rulesController': Unsatisfied dependency expressed through field 'ruleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ruleServiceImpl': Unsatisfied dependency expressed through field 'ruleMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.wrxdark.rule.mapper.RuleMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-04-14 19:57:19.770  INFO 19820 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-14 19:57:19.780  INFO 19820 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-14 19:57:19.790 ERROR 19820 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field ruleMapper in cn.wrxdark.rule.service.Impl.RuleServiceImpl required a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' in your configuration.
+
+2022-04-14 19:57:41.765  INFO 6288 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_291 on LAPTOP-U4O6F68E with PID 6288 (G:\服创\tos\buyer-api\target\classes started by 杨pc in G:\服创\tos)
+2022-04-14 19:57:41.775  INFO 6288 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 19:57:42.734  INFO 6288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 19:57:42.734  INFO 6288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 19:57:42.754  INFO 6288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2022-04-14 19:57:43.174  INFO 6288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 19:57:43.184  INFO 6288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 19:57:43.184  INFO 6288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 19:57:43.254  INFO 6288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 19:57:43.254  INFO 6288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1439 ms
+2022-04-14 19:57:45.063  WARN 6288 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rulesController': Unsatisfied dependency expressed through field 'ruleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ruleServiceImpl': Unsatisfied dependency expressed through field 'ruleMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.wrxdark.rule.mapper.RuleMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-04-14 19:57:45.073  INFO 6288 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-14 19:57:45.093  INFO 6288 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-14 19:57:45.103 ERROR 6288 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field ruleMapper in cn.wrxdark.rule.service.Impl.RuleServiceImpl required a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' in your configuration.
+
+2022-04-14 19:57:54.864  INFO 6236 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_291 on LAPTOP-U4O6F68E with PID 6236 (G:\服创\tos\buyer-api\target\classes started by 杨pc in G:\服创\tos)
+2022-04-14 19:57:54.874  INFO 6236 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 19:57:56.063  INFO 6236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 19:57:56.063  INFO 6236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 19:57:56.093  INFO 6236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2022-04-14 19:57:56.593  INFO 6236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 19:57:56.593  INFO 6236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 19:57:56.593  INFO 6236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 19:57:56.673  INFO 6236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 19:57:56.673  INFO 6236 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1740 ms
+2022-04-14 19:57:58.563  WARN 6236 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rulesController': Unsatisfied dependency expressed through field 'ruleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ruleServiceImpl': Unsatisfied dependency expressed through field 'ruleMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.wrxdark.rule.mapper.RuleMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-04-14 19:57:58.573  INFO 6236 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-14 19:57:58.583  INFO 6236 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-14 19:57:58.603 ERROR 6236 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field ruleMapper in cn.wrxdark.rule.service.Impl.RuleServiceImpl required a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.wrxdark.rule.mapper.RuleMapper' in your configuration.
+
+2022-04-14 20:16:50.124  INFO 19828 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_291 on LAPTOP-U4O6F68E with PID 19828 (G:\服创\tos\buyer-api\target\classes started by 杨pc in G:\服创\tos)
+2022-04-14 20:16:50.134  INFO 19828 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 20:16:51.153  INFO 19828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 20:16:51.163  INFO 19828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 20:16:51.183  INFO 19828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2022-04-14 20:16:51.633  INFO 19828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 20:16:51.633  INFO 19828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 20:16:51.633  INFO 19828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 20:16:51.703  INFO 19828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 20:16:51.703  INFO 19828 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1519 ms
+2022-04-14 20:16:58.848  INFO 19828 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-14 20:16:58.918  INFO 19828 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: cn.wrxdark.config.KiaSessionConfig$1@76af51d6
+2022-04-14 20:16:59.107  WARN 19828 --- [main] o.d.c.k.builder.impl.AbstractKieModule   : No files found for KieBase defaultKieBase
+2022-04-14 20:16:59.137  INFO 19828 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:17:01.284  INFO 19828 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:17:01.284  INFO 19828 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-14 20:17:01.294  WARN 19828 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2022-04-14 20:17:01.377  INFO 19828 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : container destroyed, DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:17:01.478  INFO 19828 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 20:17:01.478  INFO 19828 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 20:17:01.565  INFO 19828 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 20:17:01.565  INFO 19828 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 20:17:01.585  INFO 19828 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-14 20:17:01.595  INFO 19828 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-14 20:17:01.605 ERROR 19828 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2022-04-14 20:17:28.999  INFO 1084 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_291 on LAPTOP-U4O6F68E with PID 1084 (G:\服创\tos\buyer-api\target\classes started by 杨pc in G:\服创\tos)
+2022-04-14 20:17:29.009  INFO 1084 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 20:17:29.988  INFO 1084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 20:17:29.998  INFO 1084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 20:17:30.018  INFO 1084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2022-04-14 20:17:30.428  INFO 1084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 20:17:30.438  INFO 1084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 20:17:30.438  INFO 1084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 20:17:30.508  INFO 1084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 20:17:30.508  INFO 1084 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1459 ms
+2022-04-14 20:17:37.634  INFO 1084 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-14 20:17:37.694  INFO 1084 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: cn.wrxdark.config.KiaSessionConfig$1@67eeb310
+2022-04-14 20:17:37.881  WARN 1084 --- [main] o.d.c.k.builder.impl.AbstractKieModule   : No files found for KieBase defaultKieBase
+2022-04-14 20:17:37.931  INFO 1084 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:17:40.112  INFO 1084 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:17:40.114  INFO 1084 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-14 20:17:40.138  INFO 1084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-14 20:17:40.558  INFO 1084 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 12.025 seconds (JVM running for 13.373)
+2022-04-14 20:17:41.711  INFO 1084 --- [RMI TCP Connection(1)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-14 20:17:41.711  INFO 1084 --- [RMI TCP Connection(2)-192.168.245.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-14 20:17:41.711  INFO 1084 --- [RMI TCP Connection(2)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-14 20:17:41.721  INFO 1084 --- [RMI TCP Connection(2)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2022-04-14 20:17:42.120  INFO 1084 --- [RMI TCP Connection(1)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-14 20:28:08.520  INFO 3208 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_291 on LAPTOP-U4O6F68E with PID 3208 (G:\服创\tos\buyer-api\target\classes started by 杨pc in G:\服创\tos)
+2022-04-14 20:28:08.520  INFO 3208 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 20:28:10.430  INFO 3208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 20:28:10.450  INFO 3208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 20:28:10.610  INFO 3208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 0 Redis repository interfaces.
+2022-04-14 20:28:12.339  INFO 3208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 20:28:12.339  INFO 3208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 20:28:12.339  INFO 3208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 20:28:12.429  INFO 3208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 20:28:12.429  INFO 3208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3869 ms
+2022-04-14 20:28:15.362  INFO 21424 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_291 on LAPTOP-U4O6F68E with PID 21424 (G:\服创\tos\buyer-api\target\classes started by 杨pc in G:\服创\tos)
+2022-04-14 20:28:15.372  INFO 21424 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 20:28:16.522  INFO 21424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 20:28:16.522  INFO 21424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 20:28:16.552  INFO 21424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2022-04-14 20:28:17.081  INFO 21424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 20:28:17.091  INFO 21424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 20:28:17.091  INFO 21424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 20:28:17.171  INFO 21424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 20:28:17.171  INFO 21424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1749 ms
+2022-04-14 20:28:21.269  INFO 3208 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-14 20:28:21.339  INFO 3208 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: cn.wrxdark.config.KiaSessionConfig$1@67eeb310
+2022-04-14 20:28:21.529  WARN 3208 --- [main] o.d.c.k.builder.impl.AbstractKieModule   : No files found for KieBase defaultKieBase
+2022-04-14 20:28:21.549  INFO 3208 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:28:24.112  INFO 3208 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:28:24.122  INFO 3208 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-14 20:28:24.142  INFO 3208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-14 20:28:24.502  INFO 3208 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 16.422 seconds (JVM running for 17.732)
+2022-04-14 20:28:25.727  INFO 3208 --- [RMI TCP Connection(4)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-14 20:28:25.727  INFO 3208 --- [RMI TCP Connection(3)-192.168.245.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-14 20:28:25.727  INFO 3208 --- [RMI TCP Connection(3)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-14 20:28:25.727  INFO 3208 --- [RMI TCP Connection(3)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-14 20:28:26.167  INFO 3208 --- [RMI TCP Connection(4)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-14 20:28:26.367  INFO 21424 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-14 20:28:26.477  INFO 21424 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: cn.wrxdark.config.KiaSessionConfig$1@22ee7fdc
+2022-04-14 20:28:26.746  WARN 21424 --- [main] o.d.c.k.builder.impl.AbstractKieModule   : No files found for KieBase defaultKieBase
+2022-04-14 20:28:26.776  INFO 21424 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:28:29.032  INFO 21424 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:28:29.032  INFO 21424 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-14 20:28:29.052  WARN 21424 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2022-04-14 20:28:29.142  INFO 21424 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : container destroyed, DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:28:29.227  INFO 21424 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 20:28:29.227  INFO 21424 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 20:28:29.604  INFO 21424 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 20:28:29.604  INFO 21424 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 20:28:29.623  INFO 21424 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-14 20:28:29.633  INFO 21424 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-14 20:28:29.643 ERROR 21424 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2022-04-14 20:28:48.201  INFO 20336 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_291 on LAPTOP-U4O6F68E with PID 20336 (G:\服创\tos\buyer-api\target\classes started by 杨pc in G:\服创\tos)
+2022-04-14 20:28:48.211  INFO 20336 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 20:28:49.241  INFO 20336 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 20:28:49.241  INFO 20336 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 20:28:49.261  INFO 20336 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2022-04-14 20:28:49.741  INFO 20336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 20:28:49.751  INFO 20336 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 20:28:49.751  INFO 20336 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 20:28:49.821  INFO 20336 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 20:28:49.821  INFO 20336 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1560 ms
+2022-04-14 20:28:57.003  INFO 20336 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-14 20:28:57.083  INFO 20336 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: cn.wrxdark.config.KiaSessionConfig$1@5cf3a7f9
+2022-04-14 20:28:57.303  WARN 20336 --- [main] o.d.c.k.builder.impl.AbstractKieModule   : No files found for KieBase defaultKieBase
+2022-04-14 20:28:57.323  INFO 20336 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:28:59.512  INFO 20336 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:28:59.512  INFO 20336 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-14 20:28:59.532  INFO 20336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-14 20:28:59.902  INFO 20336 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 12.256 seconds (JVM running for 13.73)
+2022-04-14 20:29:00.843  INFO 20336 --- [RMI TCP Connection(2)-192.168.245.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-14 20:29:00.843  INFO 20336 --- [RMI TCP Connection(1)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-14 20:29:00.843  INFO 20336 --- [RMI TCP Connection(2)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-14 20:29:00.843  INFO 20336 --- [RMI TCP Connection(2)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-14 20:29:01.382  INFO 20336 --- [RMI TCP Connection(1)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-14 20:30:10.325  INFO 20336 --- [http-nio-80-exec-3] c.w.m.m.service.impl.MemberServiceImpl   : 获得了用户列表
+2022-04-14 20:38:21.717  INFO 20336 --- [SpringContextShutdownHook] a.r.s.s.DefaultRocketMQListenerContainer : container destroyed, DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:38:21.798  INFO 20336 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 20:38:21.798  INFO 20336 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 20:38:21.874  INFO 20336 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 20:38:21.875  INFO 20336 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 20:38:21.876  INFO 20336 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-14 20:38:21.881  INFO 20336 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-14 20:38:28.625  INFO 9876 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_291 on LAPTOP-U4O6F68E with PID 9876 (G:\服创\tos\buyer-api\target\classes started by 杨pc in G:\服创\tos)
+2022-04-14 20:38:28.628  INFO 9876 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 20:38:29.820  INFO 9876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 20:38:29.822  INFO 9876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 20:38:29.859  INFO 9876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2022-04-14 20:38:30.333  INFO 9876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 20:38:30.340  INFO 9876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 20:38:30.340  INFO 9876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 20:38:30.417  INFO 9876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 20:38:30.417  INFO 9876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1734 ms
+2022-04-14 20:38:37.546  INFO 9876 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-14 20:38:37.613  INFO 9876 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: cn.wrxdark.config.KiaSessionConfig$1@7cd25bf5
+2022-04-14 20:38:37.801  WARN 9876 --- [main] o.d.c.k.builder.impl.AbstractKieModule   : No files found for KieBase defaultKieBase
+2022-04-14 20:38:37.830  INFO 9876 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:38:39.991  INFO 9876 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:38:39.993  INFO 9876 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-14 20:38:40.016  INFO 9876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-14 20:38:40.388  INFO 9876 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 12.184 seconds (JVM running for 13.424)
+2022-04-14 20:38:41.503  INFO 9876 --- [RMI TCP Connection(1)-192.168.245.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-14 20:38:41.503  INFO 9876 --- [RMI TCP Connection(1)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-14 20:38:41.503  INFO 9876 --- [RMI TCP Connection(2)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-14 20:38:41.505  INFO 9876 --- [RMI TCP Connection(1)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-14 20:38:42.193  INFO 9876 --- [RMI TCP Connection(2)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-14 20:39:08.236 ERROR 9876 --- [http-nio-80-exec-1] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[RuntimeException]:
+
+java.lang.NumberFormatException: For input string: "activityId_5tj1i"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at cn.wrxdark.controller.member.MemberBuyerController.check(MemberBuyerController.java:227)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-04-14 20:39:20.667  INFO 9876 --- [http-nio-80-exec-3] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:39:20.738  INFO 9876 --- [http-nio-80-exec-3] c.w.m.m.service.impl.MemberServiceImpl   : 符合条件
+2022-04-14 20:39:21.168 ERROR 9876 --- [http-nio-80-exec-4] c.w.c.e.GlobalControllerExceptionHandler : 全局异常[RuntimeException]:
+
+java.lang.NumberFormatException: For input string: "activityId_5tj1i"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at cn.wrxdark.controller.member.MemberBuyerController.check(MemberBuyerController.java:227)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-04-14 20:39:39.205  INFO 9876 --- [http-nio-80-exec-6] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:40:48.444  INFO 9876 --- [http-nio-80-exec-8] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:40:51.805  INFO 9876 --- [http-nio-80-exec-10] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:41:31.019  INFO 9876 --- [http-nio-80-exec-12] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:42:08.767  INFO 9876 --- [ConsumeMessageThread_1] c.w.mq.consumer.TransactionConsumer      : 扣减数据库中的库存,活动id为19
+2022-04-14 20:42:08.767  INFO 9876 --- [ConsumeMessageThread_2] c.w.mq.consumer.TransactionConsumer      : 扣减数据库中的库存,活动id为19
+2022-04-14 20:44:06.190  INFO 9876 --- [ConsumeMessageThread_3] c.w.mq.consumer.TransactionConsumer      : 扣减数据库中的库存,活动id为19
+2022-04-14 20:46:06.474  INFO 9876 --- [SpringContextShutdownHook] a.r.s.s.DefaultRocketMQListenerContainer : container destroyed, DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:46:06.578  INFO 9876 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 20:46:06.579  INFO 9876 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 20:46:06.647  INFO 9876 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 20:46:06.647  INFO 9876 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 20:46:06.649  INFO 9876 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-14 20:46:06.654  INFO 9876 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-14 20:56:18.585  INFO 17344 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_291 on LAPTOP-U4O6F68E with PID 17344 (G:\服创\tos\buyer-api\target\classes started by 杨pc in G:\服创\tos)
+2022-04-14 20:56:18.588  INFO 17344 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 20:56:19.916  INFO 17344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 20:56:19.919  INFO 17344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 20:56:19.958  INFO 17344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2022-04-14 20:56:20.610  INFO 17344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 20:56:20.621  INFO 17344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 20:56:20.621  INFO 17344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 20:56:20.720  INFO 17344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 20:56:20.720  INFO 17344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2071 ms
+2022-04-14 20:56:28.903  INFO 17344 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-14 20:56:29.011  INFO 17344 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: cn.wrxdark.config.KiaSessionConfig$1@70e5737f
+2022-04-14 20:56:29.237  WARN 17344 --- [main] o.d.c.k.builder.impl.AbstractKieModule   : No files found for KieBase defaultKieBase
+2022-04-14 20:56:29.272  INFO 17344 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:56:31.683  INFO 17344 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:56:31.684  INFO 17344 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-14 20:56:31.707  WARN 17344 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2022-04-14 20:56:31.786  INFO 17344 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : container destroyed, DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:56:31.873  INFO 17344 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 20:56:31.874  INFO 17344 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 20:56:31.954  INFO 17344 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 20:56:31.955  INFO 17344 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 20:56:31.973  INFO 17344 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-14 20:56:31.987  INFO 17344 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-14 20:56:32.010 ERROR 17344 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2022-04-14 20:57:16.136  INFO 11520 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_291 on LAPTOP-U4O6F68E with PID 11520 (G:\服创\tos\buyer-api\target\classes started by 杨pc in G:\服创\tos)
+2022-04-14 20:57:16.139  INFO 11520 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 20:57:17.230  INFO 11520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 20:57:17.232  INFO 11520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 20:57:17.261  INFO 11520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2022-04-14 20:57:17.804  INFO 11520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 20:57:17.813  INFO 11520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 20:57:17.813  INFO 11520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 20:57:17.899  INFO 11520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 20:57:17.899  INFO 11520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1698 ms
+2022-04-14 20:57:25.342  INFO 11520 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-14 20:57:25.422  INFO 11520 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: cn.wrxdark.config.KiaSessionConfig$1@2b15ba1a
+2022-04-14 20:57:25.640  WARN 11520 --- [main] o.d.c.k.builder.impl.AbstractKieModule   : No files found for KieBase defaultKieBase
+2022-04-14 20:57:25.672  INFO 11520 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:57:28.236  INFO 11520 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:57:28.237  INFO 11520 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-14 20:57:28.262  INFO 11520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-14 20:57:28.671  INFO 11520 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 13.164 seconds (JVM running for 14.908)
+2022-04-14 20:57:30.000  INFO 11520 --- [RMI TCP Connection(1)-192.168.245.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-14 20:57:30.001  INFO 11520 --- [RMI TCP Connection(1)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-14 20:57:30.001  INFO 11520 --- [RMI TCP Connection(2)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-14 20:57:30.002  INFO 11520 --- [RMI TCP Connection(1)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-14 20:57:30.651  INFO 11520 --- [RMI TCP Connection(2)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-14 20:57:43.567  INFO 11520 --- [SpringContextShutdownHook] a.r.s.s.DefaultRocketMQListenerContainer : container destroyed, DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:57:43.652  INFO 11520 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 20:57:43.653  INFO 11520 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 20:57:43.730  INFO 11520 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 20:57:43.731  INFO 11520 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 20:57:43.732  INFO 11520 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-14 20:57:43.739  INFO 11520 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-14 20:57:49.752  INFO 20212 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_291 on LAPTOP-U4O6F68E with PID 20212 (G:\服创\tos\buyer-api\target\classes started by 杨pc in G:\服创\tos)
+2022-04-14 20:57:49.756  INFO 20212 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 20:57:50.900  INFO 20212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 20:57:50.902  INFO 20212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 20:57:50.932  INFO 20212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2022-04-14 20:57:51.460  INFO 20212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 20:57:51.468  INFO 20212 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 20:57:51.468  INFO 20212 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 20:57:51.550  INFO 20212 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 20:57:51.550  INFO 20212 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1729 ms
+2022-04-14 20:57:59.338  INFO 20212 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-14 20:57:59.418  INFO 20212 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: cn.wrxdark.config.KiaSessionConfig$1@622ba721
+2022-04-14 20:57:59.631  WARN 20212 --- [main] o.d.c.k.builder.impl.AbstractKieModule   : No files found for KieBase defaultKieBase
+2022-04-14 20:57:59.659  INFO 20212 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:58:01.928  INFO 20212 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 20:58:01.929  INFO 20212 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-14 20:58:01.956  INFO 20212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-14 20:58:02.370  INFO 20212 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 13.179 seconds (JVM running for 14.744)
+2022-04-14 20:58:03.120  INFO 20212 --- [RMI TCP Connection(3)-192.168.245.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-14 20:58:03.120  INFO 20212 --- [RMI TCP Connection(4)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-14 20:58:03.120  INFO 20212 --- [RMI TCP Connection(3)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-14 20:58:03.121  INFO 20212 --- [RMI TCP Connection(3)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-14 20:58:03.577  INFO 20212 --- [RMI TCP Connection(4)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-14 20:58:06.132  INFO 20212 --- [http-nio-80-exec-2] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:58:37.755  INFO 20212 --- [http-nio-80-exec-5] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 20:58:37.802  INFO 20212 --- [http-nio-80-exec-5] c.w.m.m.service.impl.MemberServiceImpl   : 符合条件
+2022-04-14 21:00:18.603  INFO 20212 --- [http-nio-80-exec-7] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 21:00:28.174  WARN 20212 --- [http-nio-80-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-04-14 21:00:30.876  INFO 20212 --- [http-nio-80-exec-10] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 21:00:39.925  INFO 20212 --- [http-nio-80-exec-12] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 21:00:44.478  INFO 20212 --- [http-nio-80-exec-15] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 21:00:46.991  INFO 20212 --- [http-nio-80-exec-16] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 21:01:01.487  INFO 20212 --- [http-nio-80-exec-19] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 21:01:02.278  INFO 20212 --- [http-nio-80-exec-20] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 21:01:03.421  INFO 20212 --- [http-nio-80-exec-22] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 21:02:08.289  INFO 20212 --- [SpringContextShutdownHook] a.r.s.s.DefaultRocketMQListenerContainer : container destroyed, DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 21:02:08.374  INFO 20212 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 21:02:08.375  INFO 20212 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 21:02:08.453  INFO 20212 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 21:02:08.453  INFO 20212 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 21:02:08.455  INFO 20212 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-14 21:02:08.460  INFO 20212 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-14 21:30:45.554  INFO 16540 --- [main] cn.wrxdark.BuyerApiApplication           : Starting BuyerApiApplication using Java 1.8.0_291 on LAPTOP-U4O6F68E with PID 16540 (G:\服创\tos\buyer-api\target\classes started by 杨pc in G:\服创\tos)
+2022-04-14 21:30:45.557  INFO 16540 --- [main] cn.wrxdark.BuyerApiApplication           : No active profile set, falling back to default profiles: default
+2022-04-14 21:30:46.661  INFO 16540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 21:30:46.664  INFO 16540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-14 21:30:46.701  INFO 16540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2022-04-14 21:30:47.222  INFO 16540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-04-14 21:30:47.229  INFO 16540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 21:30:47.230  INFO 16540 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-04-14 21:30:47.310  INFO 16540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 21:30:47.310  INFO 16540 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1687 ms
+2022-04-14 21:30:54.790  INFO 16540 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-14 21:30:54.871  INFO 16540 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: cn.wrxdark.config.KiaSessionConfig$1@5e3405a1
+2022-04-14 21:30:55.102  WARN 16540 --- [main] o.d.c.k.builder.impl.AbstractKieModule   : No files found for KieBase defaultKieBase
+2022-04-14 21:30:55.134  INFO 16540 --- [main] o.d.c.k.builder.impl.KieRepositoryImpl   : KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0-SNAPSHOT]
+2022-04-14 21:30:57.690  INFO 16540 --- [main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 21:30:57.691  INFO 16540 --- [main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:transactionConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-04-14 21:30:57.717  INFO 16540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-04-14 21:30:58.147  INFO 16540 --- [main] cn.wrxdark.BuyerApiApplication           : Started BuyerApiApplication in 13.292 seconds (JVM running for 15.098)
+2022-04-14 21:31:00.439  INFO 16540 --- [RMI TCP Connection(1)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-14 21:31:00.439  INFO 16540 --- [RMI TCP Connection(2)-192.168.245.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-14 21:31:00.440  INFO 16540 --- [RMI TCP Connection(2)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-14 21:31:00.442  INFO 16540 --- [RMI TCP Connection(2)-192.168.245.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-14 21:31:01.313  INFO 16540 --- [RMI TCP Connection(1)-192.168.245.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-14 21:32:06.647  INFO 16540 --- [SpringContextShutdownHook] a.r.s.s.DefaultRocketMQListenerContainer : container destroyed, DefaultRocketMQListenerContainer{consumerGroup='tx-consumer-group', nameServer='120.24.168.75:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2022-04-14 21:32:06.744  INFO 16540 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 21:32:06.745  INFO 16540 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 21:32:06.822  INFO 16540 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:10911] result: true
+2022-04-14 21:32:06.822  INFO 16540 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[120.24.168.75:9876] result: true
+2022-04-14 21:32:06.823  INFO 16540 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-14 21:32:06.829  INFO 16540 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

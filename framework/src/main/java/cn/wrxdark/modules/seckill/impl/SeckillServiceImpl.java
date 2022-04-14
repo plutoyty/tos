@@ -59,6 +59,7 @@ public class SeckillServiceImpl implements SeckillService {
      */
     @Override
     public String getPath(String memberId, String goodsId, String activityId) {
+        //TODO 是否有资格
         //开始验证
         //1、是否有资格
         String qualificationKey= RedisKeyUtil.generateQualificationKey(memberId,activityId);
@@ -173,8 +174,7 @@ public class SeckillServiceImpl implements SeckillService {
     public ResultMessage<String> getSeckillFoumulaImage(
             String memberId,
             String goodsId,
-            String activityId
-    ) {
+            String activityId) {
         try {
             int width = 100;
             int height = 32;

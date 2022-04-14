@@ -28,6 +28,7 @@ public class RedisCache implements Cache {
 
     @Override
     public Object get(Object key) {
+
         return redisTemplate.opsForValue().get(key);
     }
 
@@ -108,7 +109,7 @@ public class RedisCache implements Cache {
     @Override
     public Boolean remove(Object key) {
 
-       return redisTemplate.delete(key);
+        return redisTemplate.delete(key);
     }
 
     /**
@@ -334,7 +335,9 @@ public class RedisCache implements Cache {
     @Override
     public void update(Object key, Object val) {
         Object o = this.get(key);
-        if(o==null)return;
+        if(o==null) {
+            return;
+        }
         Long expire = redisTemplate.getExpire(key);
         this.put(key,val,expire,TimeUnit.SECONDS);
     }

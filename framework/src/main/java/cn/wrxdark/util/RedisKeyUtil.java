@@ -95,4 +95,13 @@ public class RedisKeyUtil {
     public static String  generateEmailKey(String email, String uuid, VerificationEnums type){
         return CachePrefix.EMAIL_CODE.getPrefix() + type.name() + uuid + email;
     }
+
+    /**
+     * 活动规则
+     * @param id
+     * @return
+     */
+    public static String generateRuleKey(String id) {
+        return CachePrefix.ACTIVITY_RULE+"_"+id;
+    }
 }

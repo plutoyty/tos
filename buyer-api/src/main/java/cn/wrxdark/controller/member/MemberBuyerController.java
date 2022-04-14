@@ -38,6 +38,32 @@ public class MemberBuyerController {
     @Autowired
     private EmailVerifyService emailVerifyService;
 
+    @Autowired
+    private Cache cache;
+
+
+    @GetMapping("test")
+    public String test(){
+        String rule = "package rules;\n" +
+                "\n" +
+                "import cn.wrxdark.modules.member.entity.dos.Member;\n" +
+                "import cn.wrxdark.modules.rule.entity.dos.CheckResult;\n" +
+                "import lombok.extern.slf4j.Slf4j;\n" +
+                "import cn.wrxdark.common.exception.ServiceException;\n" +
+                "import cn.wrxdark.common.entity.enums.ResultCode;\n" +
+                "global org.slf4j.Logger logger rule \"rule4\"\n" +
+                "dialect \"mvel\"\n" +
+                "    when\n" +
+                "$result:CheckResult()        $member:Member(age >= 18 && workCondition == 1 && dishonest == 0)\n" +
+                "    then\n" +
+                "        $result.check = true\n" +
+                "        logger.info(\"符合条件\");\n" +
+                "    end";
+        System.out.println(cache.get("ACTIVITY_RULE_1"));
+        return "ok";
+    }
+
+
     /**
      * @description  获得用户带分页的列表
      * @author 刘宇阳
@@ -185,5 +211,19 @@ public class MemberBuyerController {
         memberService.modifyUserImage(email,fileUrl);
         log.info("修改成功");
         return ResultUtil.success();
+    }
+
+    /**
+     * 初筛
+     * @param activityId
+    //     * @param member
+     * @return
+     */
+    @PostMapping("/check/{activityId}")
+    @Operation(summary = "判断用户是否有资格")
+    public ResultMessage check(@PathVariable("activityId") String activityId,
+                                Member member){
+//        return ResultUtil.success();
+        return ResultUtil.data(memberService.check(member,Integer.valueOf(activityId.trim())));
     }
 }
