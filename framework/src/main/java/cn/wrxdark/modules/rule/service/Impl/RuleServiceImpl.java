@@ -33,7 +33,7 @@ public class RuleServiceImpl implements RuleService {
      */
     @Override
     public void addRule(Rule rule) {
-        if (rule.getName().equals("") || rule.getDesc().equals("") || rule.getCode().equals("")) {
+        if (rule.getName().equals("") || rule.getDescription().equals("") || rule.getCode().equals("")) {
             throw new ServiceException(ResultCode.RULE_NOT_COMPLETE);
         }
         ruleMapper.insert(rule);
@@ -66,7 +66,7 @@ public class RuleServiceImpl implements RuleService {
 
     @Override
     public void updateRule(Rule rule) {
-        if (rule.getName().equals("") || rule.getDesc().equals("") || rule.getCode().equals("")) {
+        if (rule.getName().equals("") || rule.getDescription().equals("") || rule.getCode().equals("")) {
             throw new ServiceException(ResultCode.RULE_NOT_COMPLETE);
         }
         ruleMapper.updateById(rule);

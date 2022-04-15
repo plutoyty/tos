@@ -1,17 +1,23 @@
 package cn.wrxdark.controller.seckill;
 
 import cn.wrxdark.cache.Cache;
+import cn.wrxdark.cache.annotations.AccessLimit;
+import cn.wrxdark.common.entity.enums.ResultCode;
 import cn.wrxdark.common.entity.enums.ResultUtil;
 import cn.wrxdark.common.entity.vo.ResultMessage;
-import cn.wrxdark.common.security.annotations.AccessLimit;
+import cn.wrxdark.common.exception.ServiceException;
 import cn.wrxdark.modules.seckill.SeckillService;
 import io.swagger.annotations.Api;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author 刘宇阳
@@ -25,6 +31,12 @@ import javax.validation.constraints.NotNull;
 public class SeckillController {
     @Autowired
     private SeckillService seckillService;
+    @Autowired
+    private Cache cache;
+    @Autowired
+    private RedisTemplate redisTemplate;
+    @Autowired
+    private DefaultRedisScript stockLua;
 
     /**
      * @description 创建临时秒杀地址，内部含一些校验
@@ -84,13 +96,17 @@ public class SeckillController {
         return ResultUtil.success();
     }
 
-    @Autowired
-    private Cache cache;
+
 
     @GetMapping("/test")
     public void test(){
-        System.out.println(cache.getHash("{GOODS}_-19-1"));
-        System.out.println(cache.getHash("{ACTIVITY}_-23"));
+        String key = "stock";
+        List<String> keys = new ArrayList<>();
+        keys.add(key);
+        Long execute = (Long) redisTemplate.execute(stockLua,keys);
+        if(execute == 0){
+            throw new ServiceException(ResultCode.GOODS_SKU_QUANTITY_ERROR);
+        }
     }
 
     /**

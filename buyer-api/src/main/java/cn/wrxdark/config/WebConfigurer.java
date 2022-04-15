@@ -1,11 +1,9 @@
 package cn.wrxdark.config;
 
 
-import cn.wrxdark.common.security.interceptors.AccessLimitedInterceptor;
 import cn.wrxdark.config.interceptor.PayInterceptor;
 import com.google.common.util.concurrent.RateLimiter;
 import lombok.SneakyThrows;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -21,8 +19,6 @@ import java.util.concurrent.TimeUnit;
  */
 @Configuration
 public class WebConfigurer implements WebMvcConfigurer {
-    @Autowired
-    private AccessLimitedInterceptor accessLimitedInterceptor;
 
 
 
@@ -40,13 +36,7 @@ public class WebConfigurer implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
 
-        registry.addInterceptor(new PayInterceptor(RateLimiter.create(10000,1, TimeUnit.SECONDS)))
-                .addPathPatterns("/**")
-                .excludePathPatterns();
-
-
-//        添加限流拦截
-        registry.addInterceptor(accessLimitedInterceptor)
+        registry.addInterceptor(new PayInterceptor(RateLimiter.create(10000, 1, TimeUnit.SECONDS)))
                 .addPathPatterns("/**")
                 .excludePathPatterns();
     }

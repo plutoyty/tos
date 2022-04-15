@@ -55,10 +55,6 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
             String memberId= producerArg.getMemberId();
             String activityId= producerArg.getActivityId();
             String stockLogId=producerArg.getStockLogId();
-            //扣减redis中的库存
-            log.info("开始扣减了");
-            decrStock(goodsId,activityId);
-            log.info("扣减redis中的库存");
             //扣减用户余额
             String goodsKey= RedisKeyUtil.generateGoodsKey(goodsId,activityId);
             double goodsPrice= (double) cache.getHash(goodsKey,"initialDeposit");
@@ -115,26 +111,5 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
         }
     }
 
-    /**
-     * @description 查询以及扣减库存，同步锁保证线程安全
-     * @param goodsId 商品id
-     * @param activityId 活动id
-     * @return
-     */
-    private synchronized boolean decrStock(String goodsId,String activityId) {
-        try {
-            String key= RedisKeyUtil.generateStockKey(goodsId,activityId);
-            int restStock= (int) cache.get(key);
-            //库存不足
-            if(restStock==0){
-                return false;
-            }
-            //扣减缓存中的库存
-            cache.decrData(key,1);
-            return true;
-        }catch (Exception e){
-            e.printStackTrace();
-            return false;
-        }
-    }
+
 }

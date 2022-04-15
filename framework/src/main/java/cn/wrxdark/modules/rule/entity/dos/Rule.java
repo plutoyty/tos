@@ -35,5 +35,5 @@ public class Rule extends BaseDo implements Serializable {
 
     @ApiModelProperty("规则描述")
     @TableField("idx_desc")
-    private String desc;
+    private String description;
 }

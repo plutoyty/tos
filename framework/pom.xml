@@ -31,7 +31,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
-
         <!--        spring-jdbc依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -66,6 +65,10 @@
             <artifactId>freemarker</artifactId>
         </dependency>
         <!--        springboot热部署依赖-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-devtools</artifactId>-->
+        <!--        </dependency>-->
 
         <!--        Spring Boot内置监控功能，Actuator会把它能收集到的所有信息都暴露给JMX-->
         <!--        Actuator默认把所有访问点暴露给JMX，但处于安全原因，只有health和info会暴露给Web-->
@@ -87,6 +90,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
         </dependency>
 
         <!--            Lombok是一款Java开发插件，可以通过它定义的注解来精简冗长和繁琐的代码，主要针对简单的Java模型对象（POJO）。-->
@@ -131,7 +138,7 @@
             <artifactId>jjwt-jackson</artifactId> <!-- or jjwt-gson if Gson is preferred -->
             <scope>runtime</scope>
         </dependency>
-<!--        发送邮件-->
+        <!--        发送邮件-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
